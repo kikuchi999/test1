@@ -1,0 +1,1724 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'forever', '-g' ]
+2 info using npm@1.3.8
+3 info using node@v0.11.7
+4 verbose cache add [ 'forever', null ]
+5 verbose cache add name=undefined spec="forever" args=["forever",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'forever',
+6 verbose parsed url   path: 'forever',
+6 verbose parsed url   href: 'forever' }
+7 silly lockFile e07f8c4a-forever forever
+8 verbose lock forever /Users/dynamite807/.npm/e07f8c4a-forever.lock
+9 silly lockFile e07f8c4a-forever forever
+10 silly lockFile e07f8c4a-forever forever
+11 verbose addNamed [ 'forever', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 28ef027b-forever forever@
+14 verbose lock forever@ /Users/dynamite807/.npm/28ef027b-forever.lock
+15 silly addNameRange { name: 'forever', range: '*', hasData: false }
+16 verbose url raw forever
+17 verbose url resolving [ 'https://registry.npmjs.org/', './forever' ]
+18 verbose url resolved https://registry.npmjs.org/forever
+19 info trying registry request attempt 1 at 09:42:49
+20 verbose etag "6K5GE4ERQ19JR72QPO4U41V35"
+21 http GET https://registry.npmjs.org/forever
+22 http 304 https://registry.npmjs.org/forever
+23 silly registry.get cb [ 304,
+23 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+23 silly registry.get     etag: '"6K5GE4ERQ19JR72QPO4U41V35"',
+23 silly registry.get     date: 'Fri, 06 Dec 2013 00:42:49 GMT',
+23 silly registry.get     'content-length': '0' } ]
+24 verbose etag forever from cache
+25 silly addNameRange number 2 { name: 'forever', range: '*', hasData: true }
+26 silly addNameRange versions [ 'forever',
+26 silly addNameRange   [ '0.6.0',
+26 silly addNameRange     '0.6.1',
+26 silly addNameRange     '0.6.2',
+26 silly addNameRange     '0.6.3',
+26 silly addNameRange     '0.6.4',
+26 silly addNameRange     '0.6.5',
+26 silly addNameRange     '0.6.6',
+26 silly addNameRange     '0.6.7',
+26 silly addNameRange     '0.6.8',
+26 silly addNameRange     '0.6.9',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.7.1',
+26 silly addNameRange     '0.7.2',
+26 silly addNameRange     '0.7.3',
+26 silly addNameRange     '0.7.4',
+26 silly addNameRange     '0.7.5',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.8.2',
+26 silly addNameRange     '0.8.3',
+26 silly addNameRange     '0.8.4',
+26 silly addNameRange     '0.8.5',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.2',
+26 silly addNameRange     '0.10.0',
+26 silly addNameRange     '0.10.5',
+26 silly addNameRange     '0.10.6',
+26 silly addNameRange     '0.10.7',
+26 silly addNameRange     '0.10.8',
+26 silly addNameRange     '0.10.9',
+26 silly addNameRange     '0.10.10' ] ]
+27 verbose addNamed [ 'forever', '0.10.10' ]
+28 verbose addNamed [ '0.10.10', '0.10.10' ]
+29 silly lockFile d756cd98-forever-0-10-10 forever@0.10.10
+30 verbose lock forever@0.10.10 /Users/dynamite807/.npm/d756cd98-forever-0-10-10.lock
+31 silly lockFile d756cd98-forever-0-10-10 forever@0.10.10
+32 silly lockFile d756cd98-forever-0-10-10 forever@0.10.10
+33 silly lockFile 28ef027b-forever forever@
+34 silly lockFile 28ef027b-forever forever@
+35 silly resolved [ { name: 'forever',
+35 silly resolved     preferGlobal: 'true',
+35 silly resolved     description: 'A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)',
+35 silly resolved     version: '0.10.10',
+35 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+35 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+35 silly resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/forever.git' },
+35 silly resolved     keywords: [ 'cli', 'fault tolerant', 'sysadmin', 'tools' ],
+35 silly resolved     dependencies:
+35 silly resolved      { colors: '0.6.0-1',
+35 silly resolved        cliff: '0.1.8',
+35 silly resolved        flatiron: '0.3.5',
+35 silly resolved        'forever-monitor': '1.2.3',
+35 silly resolved        nconf: '0.6.7',
+35 silly resolved        nssocket: '~0.5.1',
+35 silly resolved        optimist: '0.4.0',
+35 silly resolved        pkginfo: '0.3.0',
+35 silly resolved        timespan: '2.1.0',
+35 silly resolved        watch: '0.7.0',
+35 silly resolved        utile: '0.1.7',
+35 silly resolved        winston: '0.7.1' },
+35 silly resolved     devDependencies:
+35 silly resolved      { broadway: '0.2.x',
+35 silly resolved        eventemitter2: '0.4.x',
+35 silly resolved        request: '2.x.x',
+35 silly resolved        vows: '0.7.x' },
+35 silly resolved     bin: { forever: './bin/forever', foreverd: './bin/foreverd' },
+35 silly resolved     main: './lib/forever',
+35 silly resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+35 silly resolved     engines: { node: '>= 0.8.x' },
+35 silly resolved     readme: '# forever [![Build Status](https://secure.travis-ci.org/nodejitsu/forever.png)](http://travis-ci.org/nodejitsu/forever)\n\nA simple CLI tool for ensuring that a given script runs continuously (i.e. forever).\n\n## Installation\n\n``` bash\n  $ [sudo] npm install forever -g\n```\n\n**Note:** If you are using forever _programatically_ you should install [forever-monitor][0].\n\n``` bash\n  $ cd /path/to/your/project\n  $ [sudo] npm install forever-monitor\n```\n\n## Usage\nThere are two distinct ways to use forever: through the command line interface, or by requiring the forever module in your own code. **Note:** If you are using forever _programatically_ you should install [forever-monitor][0].\n\n### Using forever from the command line\nYou can use forever to run any kind of script continuously (whether it is written in node.js or not). The usage options are simple:\n\n```\n  $ forever --help\n  usage: forever [action] [options] SCRIPT [script-options]\n\n  Monitors the script specified in the current process or as a daemon\n\n  actions:\n    start               Start SCRIPT as a daemon\n    stop                Stop the daemon SCRIPT\n    stopall             Stop all running forever scripts\n    restart             Restart the daemon SCRIPT\n    restartall          Restart all running forever scripts\n    list                List all running forever scripts\n    config              Lists all forever user configuration\n    set <key> <val>     Sets the specified forever config <key>\n    clear <key>         Clears the specified forever config <key>\n    logs                Lists log files for all forever processes\n    logs <script|index> Tails the logs for <script|index>\n    columns add <col>   Adds the specified column to the output in `forever list`\n    columns rm <col>    Removed the specified column from the output in `forever list`\n    columns set <cols>  Set all columns for the output in `forever list`\n    cleanlogs           [CAREFUL] Deletes all historical forever log files\n\n  options:\n    -m  MAX          Only run the specified script MAX times\n    -l  LOGFILE      Logs the forever output to LOGFILE\n    -o  OUTFILE      Logs stdout from child script to OUTFILE\n    -e  ERRFILE      Logs stderr from child script to ERRFILE\n    -p  PATH         Base path for all forever related files (pid files, etc.)\n    -c  COMMAND      COMMAND to execute (defaults to node)\n    -a, --append     Append logs\n    -f, --fifo       Stream logs to stdout\n    -n, --number     Number of log lines to print\n    --pidFile        The pid file\n    --sourceDir      The source directory for which SCRIPT is relative to\n    --minUptime      Minimum uptime (millis) for a script to not be considered "spinning"\n    --spinSleepTime  Time to wait (millis) between launches of a spinning script.\n    --colors         --no-colors will disable output coloring\n    --plain          Disable command line colors\n    -d, --debug      Forces forever to log debug output\n    -v, --verbose    Turns on the verbose messages from Forever\n    -s, --silent     Run the child script silencing stdout and stderr\n    -w, --watch      Watch for file changes\n    --watchDirectory Top-level directory to watch from\n    --watchIgnore    To ignore pattern when watch is enabled (multiple option is allowed)\n    -h, --help       You\'re staring at it\n\n  [Long Running Process]\n    The forever process will continue to run outputting log messages to the console.\n    ex. forever -o out.log -e err.log my-script.js\n\n  [Daemon]\n    The forever process will run as a daemon which will make the target process start\n    in the background. This is extremely useful for remote starting simple node.js scripts\n    without using nohup. It is recommended to run start with -o -l, & -e.\n    ex. forever start -l forever.log -o out.log -e err.log my-daemon.js\n        forever stop my-daemon.js\n```\n\nThere are [several examples][1] designed to test the fault tolerance of forever. Here\'s a simple usage example:\n\n``` bash\n  $ forever -m 5 examples/error-on-timer.js\n```\n\n## Using forever module from node.js\nIn addition to using a Forever object, the forever module also exposes some useful methods. Each method returns an instance of an EventEmitter which emits when complete. See the [forever cli commands][2] for sample usage.\n\n**Remark:** As of `forever@0.6.0` processes will not automatically be available in `forever.list()`. In order to get your processes into `forever.list()` or `forever list` you must instantiate the `forever` socket server:\n\n``` js\n  forever.startServer(child);\n```\n\n### forever.load (config)\n_Synchronously_ sets the specified configuration (config) for the forever module. There are two important options:\n\n* root:    Directory to put all default forever log files\n* pidPath: Directory to put all forever *.pid files\n\n### forever.start (file, options)\nStarts a script with forever.\n\n### forever.startDaemon (file, options)\nStarts a script with forever as a daemon. WARNING: Will daemonize the current process.\n\n### forever.stop (index)\nStops the forever daemon script at the specified index. These indices are the same as those returned by forever.list(). This method returns an EventEmitter that raises the \'stop\' event when complete.\n\n### forever.stopAll (format)\nStops all forever scripts currently running. This method returns an EventEmitter that raises the \'stopAll\' event when complete.\n\n### forever.list (format, callback)\nReturns a list of metadata objects about each process that is being run using forever. This method is synchronous and will return the list of metadata as such. Only processes which have invoked `forever.startServer()` will be available from `forever.list()`\n\n### forever.tail (target, options, callback)\nResponds with the logs from the target script(s) from `tail`. There are two important options:\n\n* `length` (numeric): is is used as the `-n` parameter to `tail`.\n* `stream` (boolean): is is used as the `-f` parameter to `tail`.\n\n### forever.cleanUp ()\nCleans up any extraneous forever *.pid files that are on the target system. This method returns an EventEmitter that raises the \'cleanUp\' event when complete.\n\n### forever.cleanLogsSync (processes)\nRemoves all log files from the root forever directory that do not belong to current running forever processes.\n\n## Run Tests\n\n``` bash\n  $ npm test\n```\n\n#### License: MIT\n#### Author: [Charlie Robbins](http://github.com/indexzero)\n#### Contributors: [Fedor Indutny](http://github.com/indutny), [James Halliday](http://substack.net/), [Charlie McConnell](http://github.com/avianflu), [Maciej Malecki](http://github.com/mmalecki), [John Lancaster](http://jlank.com)\n\n[0]: http://github.com/nodejitsu/forever-monitor\n[1]: http://github.com/nodejitsu/forever-monitor/tree/master/examples\n[2]: https://github.com/nodejitsu/forever/blob/master/lib/forever/cli.js\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     bugs: { url: 'https://github.com/nodejitsu/forever/issues' },
+35 silly resolved     _id: 'forever@0.10.10',
+35 silly resolved     _from: 'forever@' } ]
+36 info install forever@0.10.10 into /usr/local/lib
+37 info installOne forever@0.10.10
+38 info /usr/local/lib/node_modules/forever unbuild
+39 verbose tar unpack /Users/dynamite807/.npm/forever/0.10.10/package.tgz
+40 silly lockFile 5fd21e72-r-local-lib-node-modules-forever tar:///usr/local/lib/node_modules/forever
+41 verbose lock tar:///usr/local/lib/node_modules/forever /Users/dynamite807/.npm/5fd21e72-r-local-lib-node-modules-forever.lock
+42 silly lockFile a11ad208--npm-forever-0-10-10-package-tgz tar:///Users/dynamite807/.npm/forever/0.10.10/package.tgz
+43 verbose lock tar:///Users/dynamite807/.npm/forever/0.10.10/package.tgz /Users/dynamite807/.npm/a11ad208--npm-forever-0-10-10-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm extractEntry LICENSE
+49 silly gunzTarPerm extractEntry .travis.yml
+50 silly gunzTarPerm extractEntry CHANGELOG.md
+51 silly gunzTarPerm extractEntry bin/forever
+52 silly gunzTarPerm extractEntry bin/foreverd
+53 silly gunzTarPerm extractEntry bin/monitor
+54 silly gunzTarPerm extractEntry lib/forever.js
+55 silly gunzTarPerm extractEntry lib/forever/cli.js
+56 silly gunzTarPerm extractEntry lib/forever/worker.js
+57 silly gunzTarPerm extractEntry lib/forever/service/cli.js
+58 silly gunzTarPerm extractEntry lib/forever/service/index.js
+59 silly gunzTarPerm extractEntry lib/forever/service/service.js
+60 silly gunzTarPerm extractEntry lib/forever/service/adapters/adapter.js
+61 silly gunzTarPerm extractEntry lib/forever/service/adapters/initd/index.js
+62 silly gunzTarPerm extractEntry lib/forever/service/adapters/systemv/index.js
+63 silly gunzTarPerm extractEntry lib/forever/service/adapters/systemv/foreverd
+64 silly gunzTarPerm extractEntry test/cli-test
+65 silly gunzTarPerm extractEntry test/core/tail-stopall-test.js
+66 silly gunzTarPerm extractEntry test/fixtures/log-on-interval.js
+67 silly gunzTarPerm extractEntry test/fixtures/server.js
+68 silly gunzTarPerm extractEntry test/fixtures/start-daemon.js
+69 silly gunzTarPerm extractEntry test/helpers/macros.js
+70 silly gunzTarPerm extractEntry test/helpers/mocks/child-process.js
+71 silly gunzTarPerm extractEntry test/helpers/mocks/monitor.js
+72 silly gunzTarPerm extractEntry test/helpers/mocks/stream.js
+73 silly gunzTarPerm extractEntry test/service/simple-test.js
+74 silly gunzTarPerm extractEntry test/worker/multiple-workers-test.js
+75 silly gunzTarPerm extractEntry test/worker/simple-test.js
+76 silly lockFile 5fd21e72-r-local-lib-node-modules-forever tar:///usr/local/lib/node_modules/forever
+77 silly lockFile 5fd21e72-r-local-lib-node-modules-forever tar:///usr/local/lib/node_modules/forever
+78 silly lockFile a11ad208--npm-forever-0-10-10-package-tgz tar:///Users/dynamite807/.npm/forever/0.10.10/package.tgz
+79 silly lockFile a11ad208--npm-forever-0-10-10-package-tgz tar:///Users/dynamite807/.npm/forever/0.10.10/package.tgz
+80 info preinstall forever@0.10.10
+81 verbose readDependencies using package.json deps
+82 verbose readDependencies using package.json deps
+83 verbose cache add [ 'colors@0.6.0-1', null ]
+84 verbose cache add name=undefined spec="colors@0.6.0-1" args=["colors@0.6.0-1",null]
+85 verbose parsed url { protocol: null,
+85 verbose parsed url   slashes: null,
+85 verbose parsed url   auth: null,
+85 verbose parsed url   host: null,
+85 verbose parsed url   port: null,
+85 verbose parsed url   hostname: null,
+85 verbose parsed url   hash: null,
+85 verbose parsed url   search: null,
+85 verbose parsed url   query: null,
+85 verbose parsed url   pathname: 'colors@0.6.0-1',
+85 verbose parsed url   path: 'colors@0.6.0-1',
+85 verbose parsed url   href: 'colors@0.6.0-1' }
+86 verbose cache add name="colors" spec="0.6.0-1" args=["colors","0.6.0-1"]
+87 verbose parsed url { protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: '0.6.0-1',
+87 verbose parsed url   path: '0.6.0-1',
+87 verbose parsed url   href: '0.6.0-1' }
+88 verbose addNamed [ 'colors', '0.6.0-1' ]
+89 verbose addNamed [ '0.6.0-1', '0.6.0-1' ]
+90 silly lockFile 02eba27f-colors-0-6-0-1 colors@0.6.0-1
+91 verbose lock colors@0.6.0-1 /Users/dynamite807/.npm/02eba27f-colors-0-6-0-1.lock
+92 verbose cache add [ 'cliff@0.1.8', null ]
+93 verbose cache add name=undefined spec="cliff@0.1.8" args=["cliff@0.1.8",null]
+94 verbose parsed url { protocol: null,
+94 verbose parsed url   slashes: null,
+94 verbose parsed url   auth: null,
+94 verbose parsed url   host: null,
+94 verbose parsed url   port: null,
+94 verbose parsed url   hostname: null,
+94 verbose parsed url   hash: null,
+94 verbose parsed url   search: null,
+94 verbose parsed url   query: null,
+94 verbose parsed url   pathname: 'cliff@0.1.8',
+94 verbose parsed url   path: 'cliff@0.1.8',
+94 verbose parsed url   href: 'cliff@0.1.8' }
+95 verbose cache add name="cliff" spec="0.1.8" args=["cliff","0.1.8"]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: '0.1.8',
+96 verbose parsed url   path: '0.1.8',
+96 verbose parsed url   href: '0.1.8' }
+97 verbose addNamed [ 'cliff', '0.1.8' ]
+98 verbose addNamed [ '0.1.8', '0.1.8' ]
+99 silly lockFile a0c35da7-cliff-0-1-8 cliff@0.1.8
+100 verbose lock cliff@0.1.8 /Users/dynamite807/.npm/a0c35da7-cliff-0-1-8.lock
+101 verbose cache add [ 'flatiron@0.3.5', null ]
+102 verbose cache add name=undefined spec="flatiron@0.3.5" args=["flatiron@0.3.5",null]
+103 verbose parsed url { protocol: null,
+103 verbose parsed url   slashes: null,
+103 verbose parsed url   auth: null,
+103 verbose parsed url   host: null,
+103 verbose parsed url   port: null,
+103 verbose parsed url   hostname: null,
+103 verbose parsed url   hash: null,
+103 verbose parsed url   search: null,
+103 verbose parsed url   query: null,
+103 verbose parsed url   pathname: 'flatiron@0.3.5',
+103 verbose parsed url   path: 'flatiron@0.3.5',
+103 verbose parsed url   href: 'flatiron@0.3.5' }
+104 verbose cache add name="flatiron" spec="0.3.5" args=["flatiron","0.3.5"]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: '0.3.5',
+105 verbose parsed url   path: '0.3.5',
+105 verbose parsed url   href: '0.3.5' }
+106 verbose addNamed [ 'flatiron', '0.3.5' ]
+107 verbose addNamed [ '0.3.5', '0.3.5' ]
+108 silly lockFile 1433f963-flatiron-0-3-5 flatiron@0.3.5
+109 verbose lock flatiron@0.3.5 /Users/dynamite807/.npm/1433f963-flatiron-0-3-5.lock
+110 verbose cache add [ 'forever-monitor@1.2.3', null ]
+111 verbose cache add name=undefined spec="forever-monitor@1.2.3" args=["forever-monitor@1.2.3",null]
+112 verbose parsed url { protocol: null,
+112 verbose parsed url   slashes: null,
+112 verbose parsed url   auth: null,
+112 verbose parsed url   host: null,
+112 verbose parsed url   port: null,
+112 verbose parsed url   hostname: null,
+112 verbose parsed url   hash: null,
+112 verbose parsed url   search: null,
+112 verbose parsed url   query: null,
+112 verbose parsed url   pathname: 'forever-monitor@1.2.3',
+112 verbose parsed url   path: 'forever-monitor@1.2.3',
+112 verbose parsed url   href: 'forever-monitor@1.2.3' }
+113 verbose cache add name="forever-monitor" spec="1.2.3" args=["forever-monitor","1.2.3"]
+114 verbose parsed url { protocol: null,
+114 verbose parsed url   slashes: null,
+114 verbose parsed url   auth: null,
+114 verbose parsed url   host: null,
+114 verbose parsed url   port: null,
+114 verbose parsed url   hostname: null,
+114 verbose parsed url   hash: null,
+114 verbose parsed url   search: null,
+114 verbose parsed url   query: null,
+114 verbose parsed url   pathname: '1.2.3',
+114 verbose parsed url   path: '1.2.3',
+114 verbose parsed url   href: '1.2.3' }
+115 verbose addNamed [ 'forever-monitor', '1.2.3' ]
+116 verbose addNamed [ '1.2.3', '1.2.3' ]
+117 silly lockFile 355c84e8-forever-monitor-1-2-3 forever-monitor@1.2.3
+118 verbose lock forever-monitor@1.2.3 /Users/dynamite807/.npm/355c84e8-forever-monitor-1-2-3.lock
+119 verbose cache add [ 'nconf@0.6.7', null ]
+120 verbose cache add name=undefined spec="nconf@0.6.7" args=["nconf@0.6.7",null]
+121 verbose parsed url { protocol: null,
+121 verbose parsed url   slashes: null,
+121 verbose parsed url   auth: null,
+121 verbose parsed url   host: null,
+121 verbose parsed url   port: null,
+121 verbose parsed url   hostname: null,
+121 verbose parsed url   hash: null,
+121 verbose parsed url   search: null,
+121 verbose parsed url   query: null,
+121 verbose parsed url   pathname: 'nconf@0.6.7',
+121 verbose parsed url   path: 'nconf@0.6.7',
+121 verbose parsed url   href: 'nconf@0.6.7' }
+122 verbose cache add name="nconf" spec="0.6.7" args=["nconf","0.6.7"]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: '0.6.7',
+123 verbose parsed url   path: '0.6.7',
+123 verbose parsed url   href: '0.6.7' }
+124 verbose addNamed [ 'nconf', '0.6.7' ]
+125 verbose addNamed [ '0.6.7', '0.6.7' ]
+126 silly lockFile 9482211e-nconf-0-6-7 nconf@0.6.7
+127 verbose lock nconf@0.6.7 /Users/dynamite807/.npm/9482211e-nconf-0-6-7.lock
+128 verbose cache add [ 'nssocket@~0.5.1', null ]
+129 verbose cache add name=undefined spec="nssocket@~0.5.1" args=["nssocket@~0.5.1",null]
+130 verbose parsed url { protocol: null,
+130 verbose parsed url   slashes: null,
+130 verbose parsed url   auth: null,
+130 verbose parsed url   host: null,
+130 verbose parsed url   port: null,
+130 verbose parsed url   hostname: null,
+130 verbose parsed url   hash: null,
+130 verbose parsed url   search: null,
+130 verbose parsed url   query: null,
+130 verbose parsed url   pathname: 'nssocket@~0.5.1',
+130 verbose parsed url   path: 'nssocket@~0.5.1',
+130 verbose parsed url   href: 'nssocket@~0.5.1' }
+131 verbose cache add name="nssocket" spec="~0.5.1" args=["nssocket","~0.5.1"]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: '~0.5.1',
+132 verbose parsed url   path: '~0.5.1',
+132 verbose parsed url   href: '~0.5.1' }
+133 verbose addNamed [ 'nssocket', '~0.5.1' ]
+134 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+135 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+136 verbose lock nssocket@~0.5.1 /Users/dynamite807/.npm/936c2de0-nssocket-0-5-1.lock
+137 verbose url raw colors/0.6.0-1
+138 verbose url resolving [ 'https://registry.npmjs.org/', './colors/0.6.0-1' ]
+139 verbose url resolved https://registry.npmjs.org/colors/0.6.0-1
+140 info trying registry request attempt 1 at 09:43:37
+141 http GET https://registry.npmjs.org/colors/0.6.0-1
+142 verbose cache add [ 'optimist@0.4.0', null ]
+143 verbose cache add name=undefined spec="optimist@0.4.0" args=["optimist@0.4.0",null]
+144 verbose parsed url { protocol: null,
+144 verbose parsed url   slashes: null,
+144 verbose parsed url   auth: null,
+144 verbose parsed url   host: null,
+144 verbose parsed url   port: null,
+144 verbose parsed url   hostname: null,
+144 verbose parsed url   hash: null,
+144 verbose parsed url   search: null,
+144 verbose parsed url   query: null,
+144 verbose parsed url   pathname: 'optimist@0.4.0',
+144 verbose parsed url   path: 'optimist@0.4.0',
+144 verbose parsed url   href: 'optimist@0.4.0' }
+145 verbose cache add name="optimist" spec="0.4.0" args=["optimist","0.4.0"]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: '0.4.0',
+146 verbose parsed url   path: '0.4.0',
+146 verbose parsed url   href: '0.4.0' }
+147 verbose addNamed [ 'optimist', '0.4.0' ]
+148 verbose addNamed [ '0.4.0', '0.4.0' ]
+149 silly lockFile aea543b7-optimist-0-4-0 optimist@0.4.0
+150 verbose lock optimist@0.4.0 /Users/dynamite807/.npm/aea543b7-optimist-0-4-0.lock
+151 verbose cache add [ 'pkginfo@0.3.0', null ]
+152 verbose cache add name=undefined spec="pkginfo@0.3.0" args=["pkginfo@0.3.0",null]
+153 verbose parsed url { protocol: null,
+153 verbose parsed url   slashes: null,
+153 verbose parsed url   auth: null,
+153 verbose parsed url   host: null,
+153 verbose parsed url   port: null,
+153 verbose parsed url   hostname: null,
+153 verbose parsed url   hash: null,
+153 verbose parsed url   search: null,
+153 verbose parsed url   query: null,
+153 verbose parsed url   pathname: 'pkginfo@0.3.0',
+153 verbose parsed url   path: 'pkginfo@0.3.0',
+153 verbose parsed url   href: 'pkginfo@0.3.0' }
+154 verbose cache add name="pkginfo" spec="0.3.0" args=["pkginfo","0.3.0"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '0.3.0',
+155 verbose parsed url   path: '0.3.0',
+155 verbose parsed url   href: '0.3.0' }
+156 verbose addNamed [ 'pkginfo', '0.3.0' ]
+157 verbose addNamed [ '0.3.0', '0.3.0' ]
+158 silly lockFile c6150d55-pkginfo-0-3-0 pkginfo@0.3.0
+159 verbose lock pkginfo@0.3.0 /Users/dynamite807/.npm/c6150d55-pkginfo-0-3-0.lock
+160 verbose cache add [ 'timespan@2.1.0', null ]
+161 verbose cache add name=undefined spec="timespan@2.1.0" args=["timespan@2.1.0",null]
+162 verbose parsed url { protocol: null,
+162 verbose parsed url   slashes: null,
+162 verbose parsed url   auth: null,
+162 verbose parsed url   host: null,
+162 verbose parsed url   port: null,
+162 verbose parsed url   hostname: null,
+162 verbose parsed url   hash: null,
+162 verbose parsed url   search: null,
+162 verbose parsed url   query: null,
+162 verbose parsed url   pathname: 'timespan@2.1.0',
+162 verbose parsed url   path: 'timespan@2.1.0',
+162 verbose parsed url   href: 'timespan@2.1.0' }
+163 verbose cache add name="timespan" spec="2.1.0" args=["timespan","2.1.0"]
+164 verbose parsed url { protocol: null,
+164 verbose parsed url   slashes: null,
+164 verbose parsed url   auth: null,
+164 verbose parsed url   host: null,
+164 verbose parsed url   port: null,
+164 verbose parsed url   hostname: null,
+164 verbose parsed url   hash: null,
+164 verbose parsed url   search: null,
+164 verbose parsed url   query: null,
+164 verbose parsed url   pathname: '2.1.0',
+164 verbose parsed url   path: '2.1.0',
+164 verbose parsed url   href: '2.1.0' }
+165 verbose addNamed [ 'timespan', '2.1.0' ]
+166 verbose addNamed [ '2.1.0', '2.1.0' ]
+167 silly lockFile cddb5fa0-timespan-2-1-0 timespan@2.1.0
+168 verbose lock timespan@2.1.0 /Users/dynamite807/.npm/cddb5fa0-timespan-2-1-0.lock
+169 verbose cache add [ 'watch@0.7.0', null ]
+170 verbose cache add name=undefined spec="watch@0.7.0" args=["watch@0.7.0",null]
+171 verbose parsed url { protocol: null,
+171 verbose parsed url   slashes: null,
+171 verbose parsed url   auth: null,
+171 verbose parsed url   host: null,
+171 verbose parsed url   port: null,
+171 verbose parsed url   hostname: null,
+171 verbose parsed url   hash: null,
+171 verbose parsed url   search: null,
+171 verbose parsed url   query: null,
+171 verbose parsed url   pathname: 'watch@0.7.0',
+171 verbose parsed url   path: 'watch@0.7.0',
+171 verbose parsed url   href: 'watch@0.7.0' }
+172 verbose cache add name="watch" spec="0.7.0" args=["watch","0.7.0"]
+173 verbose parsed url { protocol: null,
+173 verbose parsed url   slashes: null,
+173 verbose parsed url   auth: null,
+173 verbose parsed url   host: null,
+173 verbose parsed url   port: null,
+173 verbose parsed url   hostname: null,
+173 verbose parsed url   hash: null,
+173 verbose parsed url   search: null,
+173 verbose parsed url   query: null,
+173 verbose parsed url   pathname: '0.7.0',
+173 verbose parsed url   path: '0.7.0',
+173 verbose parsed url   href: '0.7.0' }
+174 verbose addNamed [ 'watch', '0.7.0' ]
+175 verbose addNamed [ '0.7.0', '0.7.0' ]
+176 silly lockFile 761751e6-watch-0-7-0 watch@0.7.0
+177 verbose lock watch@0.7.0 /Users/dynamite807/.npm/761751e6-watch-0-7-0.lock
+178 verbose cache add [ 'utile@0.1.7', null ]
+179 verbose cache add name=undefined spec="utile@0.1.7" args=["utile@0.1.7",null]
+180 verbose parsed url { protocol: null,
+180 verbose parsed url   slashes: null,
+180 verbose parsed url   auth: null,
+180 verbose parsed url   host: null,
+180 verbose parsed url   port: null,
+180 verbose parsed url   hostname: null,
+180 verbose parsed url   hash: null,
+180 verbose parsed url   search: null,
+180 verbose parsed url   query: null,
+180 verbose parsed url   pathname: 'utile@0.1.7',
+180 verbose parsed url   path: 'utile@0.1.7',
+180 verbose parsed url   href: 'utile@0.1.7' }
+181 verbose cache add name="utile" spec="0.1.7" args=["utile","0.1.7"]
+182 verbose parsed url { protocol: null,
+182 verbose parsed url   slashes: null,
+182 verbose parsed url   auth: null,
+182 verbose parsed url   host: null,
+182 verbose parsed url   port: null,
+182 verbose parsed url   hostname: null,
+182 verbose parsed url   hash: null,
+182 verbose parsed url   search: null,
+182 verbose parsed url   query: null,
+182 verbose parsed url   pathname: '0.1.7',
+182 verbose parsed url   path: '0.1.7',
+182 verbose parsed url   href: '0.1.7' }
+183 verbose addNamed [ 'utile', '0.1.7' ]
+184 verbose addNamed [ '0.1.7', '0.1.7' ]
+185 silly lockFile 78905450-utile-0-1-7 utile@0.1.7
+186 verbose lock utile@0.1.7 /Users/dynamite807/.npm/78905450-utile-0-1-7.lock
+187 verbose cache add [ 'winston@0.7.1', null ]
+188 verbose cache add name=undefined spec="winston@0.7.1" args=["winston@0.7.1",null]
+189 verbose parsed url { protocol: null,
+189 verbose parsed url   slashes: null,
+189 verbose parsed url   auth: null,
+189 verbose parsed url   host: null,
+189 verbose parsed url   port: null,
+189 verbose parsed url   hostname: null,
+189 verbose parsed url   hash: null,
+189 verbose parsed url   search: null,
+189 verbose parsed url   query: null,
+189 verbose parsed url   pathname: 'winston@0.7.1',
+189 verbose parsed url   path: 'winston@0.7.1',
+189 verbose parsed url   href: 'winston@0.7.1' }
+190 verbose cache add name="winston" spec="0.7.1" args=["winston","0.7.1"]
+191 verbose parsed url { protocol: null,
+191 verbose parsed url   slashes: null,
+191 verbose parsed url   auth: null,
+191 verbose parsed url   host: null,
+191 verbose parsed url   port: null,
+191 verbose parsed url   hostname: null,
+191 verbose parsed url   hash: null,
+191 verbose parsed url   search: null,
+191 verbose parsed url   query: null,
+191 verbose parsed url   pathname: '0.7.1',
+191 verbose parsed url   path: '0.7.1',
+191 verbose parsed url   href: '0.7.1' }
+192 verbose addNamed [ 'winston', '0.7.1' ]
+193 verbose addNamed [ '0.7.1', '0.7.1' ]
+194 silly lockFile e9235a63-winston-0-7-1 winston@0.7.1
+195 verbose lock winston@0.7.1 /Users/dynamite807/.npm/e9235a63-winston-0-7-1.lock
+196 verbose url raw cliff/0.1.8
+197 verbose url resolving [ 'https://registry.npmjs.org/', './cliff/0.1.8' ]
+198 verbose url resolved https://registry.npmjs.org/cliff/0.1.8
+199 info trying registry request attempt 1 at 09:43:37
+200 http GET https://registry.npmjs.org/cliff/0.1.8
+201 verbose url raw flatiron/0.3.5
+202 verbose url resolving [ 'https://registry.npmjs.org/', './flatiron/0.3.5' ]
+203 verbose url resolved https://registry.npmjs.org/flatiron/0.3.5
+204 info trying registry request attempt 1 at 09:43:37
+205 http GET https://registry.npmjs.org/flatiron/0.3.5
+206 verbose url raw forever-monitor/1.2.3
+207 verbose url resolving [ 'https://registry.npmjs.org/', './forever-monitor/1.2.3' ]
+208 verbose url resolved https://registry.npmjs.org/forever-monitor/1.2.3
+209 info trying registry request attempt 1 at 09:43:37
+210 http GET https://registry.npmjs.org/forever-monitor/1.2.3
+211 verbose url raw nconf/0.6.7
+212 verbose url resolving [ 'https://registry.npmjs.org/', './nconf/0.6.7' ]
+213 verbose url resolved https://registry.npmjs.org/nconf/0.6.7
+214 info trying registry request attempt 1 at 09:43:37
+215 http GET https://registry.npmjs.org/nconf/0.6.7
+216 silly addNameRange { name: 'nssocket', range: '>=0.5.1-0 <0.6.0-0', hasData: false }
+217 verbose url raw nssocket
+218 verbose url resolving [ 'https://registry.npmjs.org/', './nssocket' ]
+219 verbose url resolved https://registry.npmjs.org/nssocket
+220 info trying registry request attempt 1 at 09:43:37
+221 http GET https://registry.npmjs.org/nssocket
+222 verbose url raw timespan/2.1.0
+223 verbose url resolving [ 'https://registry.npmjs.org/', './timespan/2.1.0' ]
+224 verbose url resolved https://registry.npmjs.org/timespan/2.1.0
+225 info trying registry request attempt 1 at 09:43:37
+226 http GET https://registry.npmjs.org/timespan/2.1.0
+227 verbose url raw pkginfo/0.3.0
+228 verbose url resolving [ 'https://registry.npmjs.org/', './pkginfo/0.3.0' ]
+229 verbose url resolved https://registry.npmjs.org/pkginfo/0.3.0
+230 info trying registry request attempt 1 at 09:43:37
+231 http GET https://registry.npmjs.org/pkginfo/0.3.0
+232 verbose url raw watch/0.7.0
+233 verbose url resolving [ 'https://registry.npmjs.org/', './watch/0.7.0' ]
+234 verbose url resolved https://registry.npmjs.org/watch/0.7.0
+235 info trying registry request attempt 1 at 09:43:37
+236 http GET https://registry.npmjs.org/watch/0.7.0
+237 verbose url raw utile/0.1.7
+238 verbose url resolving [ 'https://registry.npmjs.org/', './utile/0.1.7' ]
+239 verbose url resolved https://registry.npmjs.org/utile/0.1.7
+240 info trying registry request attempt 1 at 09:43:37
+241 http GET https://registry.npmjs.org/utile/0.1.7
+242 verbose url raw winston/0.7.1
+243 verbose url resolving [ 'https://registry.npmjs.org/', './winston/0.7.1' ]
+244 verbose url resolved https://registry.npmjs.org/winston/0.7.1
+245 info trying registry request attempt 1 at 09:43:37
+246 http GET https://registry.npmjs.org/winston/0.7.1
+247 verbose url raw optimist/0.4.0
+248 verbose url resolving [ 'https://registry.npmjs.org/', './optimist/0.4.0' ]
+249 verbose url resolved https://registry.npmjs.org/optimist/0.4.0
+250 info trying registry request attempt 1 at 09:43:37
+251 http GET https://registry.npmjs.org/optimist/0.4.0
+252 http 200 https://registry.npmjs.org/forever-monitor/1.2.3
+253 silly registry.get cb [ 200,
+253 silly registry.get   { vary: 'Accept',
+253 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+253 silly registry.get     etag: '"6PJ1W5H2240WWOJ2NO6YBNNAH"',
+253 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+253 silly registry.get     'content-type': 'application/json',
+253 silly registry.get     'content-length': '6178' } ]
+254 silly lockFile 00dcb118-onitor-forever-monitor-1-2-3-tgz https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz
+255 verbose lock https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz /Users/dynamite807/.npm/00dcb118-onitor-forever-monitor-1-2-3-tgz.lock
+256 verbose addRemoteTarball [ 'https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz',
+256 verbose addRemoteTarball   'b27ac3acb6fdcc7315d6cd85830f2d004733028b' ]
+257 http 200 https://registry.npmjs.org/utile/0.1.7
+258 silly registry.get cb [ 200,
+258 silly registry.get   { vary: 'Accept',
+258 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+258 silly registry.get     etag: '"1MWOMWLW368PLNF7CG3JQQZF0"',
+258 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+258 silly registry.get     'content-type': 'application/json',
+258 silly registry.get     'content-length': '5661' } ]
+259 http 200 https://registry.npmjs.org/pkginfo/0.3.0
+260 silly registry.get cb [ 200,
+260 silly registry.get   { vary: 'Accept',
+260 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+260 silly registry.get     etag: '"8NFZE186SC0218SIA7RX07BZM"',
+260 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+260 silly registry.get     'content-type': 'application/json',
+260 silly registry.get     'content-length': '3101' } ]
+261 info retry fetch attempt 1 at 09:43:38
+262 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/tmp.tgz
+263 http GET https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz
+264 http 200 https://registry.npmjs.org/watch/0.7.0
+265 silly registry.get cb [ 200,
+265 silly registry.get   { vary: 'Accept',
+265 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+265 silly registry.get     etag: '"6LF6HMQNHS37CISIYGEOMFYEQ"',
+265 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+265 silly registry.get     'content-type': 'application/json',
+265 silly registry.get     'content-length': '3729' } ]
+266 silly lockFile 80d5629c--npmjs-org-utile-utile-0-1-7-tgz https://registry.npmjs.org/utile/-/utile-0.1.7.tgz
+267 verbose lock https://registry.npmjs.org/utile/-/utile-0.1.7.tgz /Users/dynamite807/.npm/80d5629c--npmjs-org-utile-utile-0-1-7-tgz.lock
+268 verbose addRemoteTarball [ 'https://registry.npmjs.org/utile/-/utile-0.1.7.tgz',
+268 verbose addRemoteTarball   '55db180d54475339fd6dd9e2d14a4c0b52624b69' ]
+269 silly lockFile 0d38efc5-js-org-pkginfo-pkginfo-0-3-0-tgz https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+270 verbose lock https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz /Users/dynamite807/.npm/0d38efc5-js-org-pkginfo-pkginfo-0-3-0-tgz.lock
+271 info retry fetch attempt 1 at 09:43:38
+272 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/tmp.tgz
+273 verbose addRemoteTarball [ 'https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz',
+273 verbose addRemoteTarball   '726411401039fe9b009eea86614295d5f3a54276' ]
+274 http GET https://registry.npmjs.org/utile/-/utile-0.1.7.tgz
+275 info retry fetch attempt 1 at 09:43:38
+276 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/tmp.tgz
+277 http GET https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+278 silly lockFile fa1c3283--npmjs-org-watch-watch-0-7-0-tgz https://registry.npmjs.org/watch/-/watch-0.7.0.tgz
+279 verbose lock https://registry.npmjs.org/watch/-/watch-0.7.0.tgz /Users/dynamite807/.npm/fa1c3283--npmjs-org-watch-watch-0-7-0-tgz.lock
+280 verbose addRemoteTarball [ 'https://registry.npmjs.org/watch/-/watch-0.7.0.tgz',
+280 verbose addRemoteTarball   '3d6e715648af867ec7f1149302b526479e726856' ]
+281 info retry fetch attempt 1 at 09:43:38
+282 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/tmp.tgz
+283 http GET https://registry.npmjs.org/watch/-/watch-0.7.0.tgz
+284 http 200 https://registry.npmjs.org/cliff/0.1.8
+285 silly registry.get cb [ 200,
+285 silly registry.get   { vary: 'Accept',
+285 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+285 silly registry.get     etag: '"D922JZYN4QWU5BL2QN9QCINSR"',
+285 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+285 silly registry.get     'content-type': 'application/json',
+285 silly registry.get     'content-length': '7353' } ]
+286 http 200 https://registry.npmjs.org/timespan/2.1.0
+287 silly registry.get cb [ 200,
+287 silly registry.get   { vary: 'Accept',
+287 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+287 silly registry.get     etag: '"BAAPTI6XMK4YZWZZ014XUO45B"',
+287 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+287 silly registry.get     'content-type': 'application/json',
+287 silly registry.get     'content-length': '942' } ]
+288 silly lockFile 3fad3ff6--npmjs-org-cliff-cliff-0-1-8-tgz https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+289 verbose lock https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz /Users/dynamite807/.npm/3fad3ff6--npmjs-org-cliff-cliff-0-1-8-tgz.lock
+290 silly lockFile 817db2d7--org-timespan-timespan-2-1-0-tgz https://registry.npmjs.org/timespan/-/timespan-2.1.0.tgz
+291 verbose lock https://registry.npmjs.org/timespan/-/timespan-2.1.0.tgz /Users/dynamite807/.npm/817db2d7--org-timespan-timespan-2-1-0-tgz.lock
+292 verbose addRemoteTarball [ 'https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz',
+292 verbose addRemoteTarball   '43ca8ad9fe3943489693ab62dce0cae22509d272' ]
+293 verbose addRemoteTarball [ 'https://registry.npmjs.org/timespan/-/timespan-2.1.0.tgz',
+293 verbose addRemoteTarball   '9a410fbbf26e213362d956f4836349e65e573832' ]
+294 info retry fetch attempt 1 at 09:43:38
+295 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5427655964158475/tmp.tgz
+296 info retry fetch attempt 1 at 09:43:38
+297 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/tmp.tgz
+298 http 200 https://registry.npmjs.org/colors/0.6.0-1
+299 silly registry.get cb [ 200,
+299 silly registry.get   { vary: 'Accept',
+299 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+299 silly registry.get     etag: '"DOKW6HPPY5WFGC2E6O55KNYZ"',
+299 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+299 silly registry.get     'content-type': 'application/json',
+299 silly registry.get     'content-length': '682' } ]
+300 http GET https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+301 http GET https://registry.npmjs.org/timespan/-/timespan-2.1.0.tgz
+302 http 200 https://registry.npmjs.org/nconf/0.6.7
+303 silly registry.get cb [ 200,
+303 silly registry.get   { vary: 'Accept',
+303 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+303 silly registry.get     etag: '"ES7H3Z4DUU91ZGONMCKDRDAXJ"',
+303 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+303 silly registry.get     'content-type': 'application/json',
+303 silly registry.get     'content-length': '9248' } ]
+304 silly lockFile fc1f01f9-js-org-colors-colors-0-6-0-1-tgz https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz
+305 verbose lock https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz /Users/dynamite807/.npm/fc1f01f9-js-org-colors-colors-0-6-0-1-tgz.lock
+306 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz',
+306 verbose addRemoteTarball   '6dbb68ceb8bc60f2b313dcc5ce1599f06d19e67a' ]
+307 silly lockFile a647e65f--npmjs-org-nconf-nconf-0-6-7-tgz https://registry.npmjs.org/nconf/-/nconf-0.6.7.tgz
+308 verbose lock https://registry.npmjs.org/nconf/-/nconf-0.6.7.tgz /Users/dynamite807/.npm/a647e65f--npmjs-org-nconf-nconf-0-6-7-tgz.lock
+309 info retry fetch attempt 1 at 09:43:38
+310 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/tmp.tgz
+311 verbose addRemoteTarball [ 'https://registry.npmjs.org/nconf/-/nconf-0.6.7.tgz',
+311 verbose addRemoteTarball   'f2ffce75f4573857429c719d9f6ed0a9a231a47c' ]
+312 http GET https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz
+313 info retry fetch attempt 1 at 09:43:38
+314 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/tmp.tgz
+315 http GET https://registry.npmjs.org/nconf/-/nconf-0.6.7.tgz
+316 http 200 https://registry.npmjs.org/flatiron/0.3.5
+317 silly registry.get cb [ 200,
+317 silly registry.get   { vary: 'Accept',
+317 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+317 silly registry.get     etag: '"37MZXHYTDCKGRAR7XVL6OT6HA"',
+317 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+317 silly registry.get     'content-type': 'application/json',
+317 silly registry.get     'content-length': '13671' } ]
+318 silly lockFile 5f892320--org-flatiron-flatiron-0-3-5-tgz https://registry.npmjs.org/flatiron/-/flatiron-0.3.5.tgz
+319 verbose lock https://registry.npmjs.org/flatiron/-/flatiron-0.3.5.tgz /Users/dynamite807/.npm/5f892320--org-flatiron-flatiron-0-3-5-tgz.lock
+320 verbose addRemoteTarball [ 'https://registry.npmjs.org/flatiron/-/flatiron-0.3.5.tgz',
+320 verbose addRemoteTarball   'a91fe730f6a7fc1ea655a0ca48eaa977bef64625' ]
+321 info retry fetch attempt 1 at 09:43:38
+322 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/tmp.tgz
+323 http GET https://registry.npmjs.org/flatiron/-/flatiron-0.3.5.tgz
+324 http 200 https://registry.npmjs.org/winston/0.7.1
+325 silly registry.get cb [ 200,
+325 silly registry.get   { vary: 'Accept',
+325 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+325 silly registry.get     etag: '"9M7ZPYZ016MKWBHLXUNBP3BT3"',
+325 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+325 silly registry.get     'content-type': 'application/json',
+325 silly registry.get     'content-length': '30968' } ]
+326 silly lockFile e0a9fd2f-js-org-winston-winston-0-7-1-tgz https://registry.npmjs.org/winston/-/winston-0.7.1.tgz
+327 verbose lock https://registry.npmjs.org/winston/-/winston-0.7.1.tgz /Users/dynamite807/.npm/e0a9fd2f-js-org-winston-winston-0-7-1-tgz.lock
+328 verbose addRemoteTarball [ 'https://registry.npmjs.org/winston/-/winston-0.7.1.tgz',
+328 verbose addRemoteTarball   'e291ab24eddbf79ea40ff532619277a0d30b0eb3' ]
+329 info retry fetch attempt 1 at 09:43:38
+330 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618330-0.7219149523880333/tmp.tgz
+331 http GET https://registry.npmjs.org/winston/-/winston-0.7.1.tgz
+332 http 200 https://registry.npmjs.org/optimist/0.4.0
+333 silly registry.get cb [ 200,
+333 silly registry.get   { vary: 'Accept',
+333 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+333 silly registry.get     etag: '"17HK3GIJO1WM4UFLZ2PCD86NT"',
+333 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+333 silly registry.get     'content-type': 'application/json',
+333 silly registry.get     'content-length': '11692' } ]
+334 silly lockFile 12d4fb5c--org-optimist-optimist-0-4-0-tgz https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz
+335 verbose lock https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz /Users/dynamite807/.npm/12d4fb5c--org-optimist-optimist-0-4-0-tgz.lock
+336 verbose addRemoteTarball [ 'https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz',
+336 verbose addRemoteTarball   'cb8ec37f2fe3aa9864cb67a275250e7e19620a25' ]
+337 info retry fetch attempt 1 at 09:43:38
+338 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/tmp.tgz
+339 http GET https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz
+340 http 200 https://registry.npmjs.org/nssocket
+341 silly registry.get cb [ 200,
+341 silly registry.get   { vary: 'Accept',
+341 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+341 silly registry.get     etag: '"6RL9RA3VV3SUMY8LWF5VI31GN"',
+341 silly registry.get     date: 'Fri, 06 Dec 2013 00:43:38 GMT',
+341 silly registry.get     'content-type': 'application/json',
+341 silly registry.get     'content-length': '52290' } ]
+342 silly addNameRange number 2 { name: 'nssocket', range: '>=0.5.1-0 <0.6.0-0', hasData: true }
+343 silly addNameRange versions [ 'nssocket',
+343 silly addNameRange   [ '0.1.0',
+343 silly addNameRange     '0.1.1',
+343 silly addNameRange     '0.2.0',
+343 silly addNameRange     '0.2.1',
+343 silly addNameRange     '0.2.2',
+343 silly addNameRange     '0.2.3',
+343 silly addNameRange     '0.2.4',
+343 silly addNameRange     '0.2.5',
+343 silly addNameRange     '0.2.5-1',
+343 silly addNameRange     '0.3.0',
+343 silly addNameRange     '0.3.1',
+343 silly addNameRange     '0.3.2',
+343 silly addNameRange     '0.3.3',
+343 silly addNameRange     '0.3.4',
+343 silly addNameRange     '0.3.5',
+343 silly addNameRange     '0.3.6',
+343 silly addNameRange     '0.3.7',
+343 silly addNameRange     '0.3.8',
+343 silly addNameRange     '0.4.0',
+343 silly addNameRange     '0.5.0',
+343 silly addNameRange     '0.5.1' ] ]
+344 verbose addNamed [ 'nssocket', '0.5.1' ]
+345 verbose addNamed [ '0.5.1', '0.5.1' ]
+346 silly lockFile f616423b-nssocket-0-5-1 nssocket@0.5.1
+347 verbose lock nssocket@0.5.1 /Users/dynamite807/.npm/f616423b-nssocket-0-5-1.lock
+348 silly lockFile 5ec41cf7--org-nssocket-nssocket-0-5-1-tgz https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz
+349 verbose lock https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz /Users/dynamite807/.npm/5ec41cf7--org-nssocket-nssocket-0-5-1-tgz.lock
+350 verbose addRemoteTarball [ 'https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz',
+350 verbose addRemoteTarball   '11f0428335ad8d89ff9cf96ab2852a23b1b33b71' ]
+351 info retry fetch attempt 1 at 09:43:38
+352 verbose fetch to= /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/tmp.tgz
+353 http GET https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz
+354 http 200 https://registry.npmjs.org/utile/-/utile-0.1.7.tgz
+355 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/tmp.tgz
+356 silly lockFile 325af483-18183-0-8265093937516212-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+357 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package /Users/dynamite807/.npm/325af483-18183-0-8265093937516212-package.lock
+358 silly lockFile 85abae13-18183-0-8265093937516212-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/tmp.tgz
+359 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/tmp.tgz /Users/dynamite807/.npm/85abae13-18183-0-8265093937516212-tmp-tgz.lock
+360 silly gunzTarPerm modes [ '755', '644' ]
+361 silly gunzTarPerm extractEntry package.json
+362 silly gunzTarPerm extractEntry .npmignore
+363 silly gunzTarPerm extractEntry README.md
+364 silly gunzTarPerm extractEntry LICENSE
+365 silly gunzTarPerm extractEntry .travis.yml
+366 silly gunzTarPerm extractEntry CHANGELOG.md
+367 silly gunzTarPerm extractEntry lib/args.js
+368 silly gunzTarPerm extractEntry lib/base64.js
+369 silly gunzTarPerm extractEntry lib/file.js
+370 silly gunzTarPerm extractEntry lib/format.js
+371 silly gunzTarPerm extractEntry lib/index.js
+372 silly gunzTarPerm extractEntry test/file-test.js
+373 silly gunzTarPerm extractEntry test/format-test.js
+374 silly gunzTarPerm extractEntry test/function-args-test.js
+375 silly gunzTarPerm extractEntry test/random-string-test.js
+376 silly gunzTarPerm extractEntry test/require-directory-test.js
+377 silly gunzTarPerm extractEntry test/utile-test.js
+378 silly gunzTarPerm extractEntry test/fixtures/read-json-file/config.json
+379 silly gunzTarPerm extractEntry test/fixtures/require-directory/helloWorld.js
+380 silly gunzTarPerm extractEntry test/fixtures/require-directory/directory/index.js
+381 silly gunzTarPerm extractEntry test/helpers/macros.js
+382 http 200 https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.2.3.tgz
+383 http 200 https://registry.npmjs.org/nconf/-/nconf-0.6.7.tgz
+384 http 200 https://registry.npmjs.org/watch/-/watch-0.7.0.tgz
+385 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/tmp.tgz
+386 silly lockFile 645c6c59-8191-0-08902338379994035-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+387 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package /Users/dynamite807/.npm/645c6c59-8191-0-08902338379994035-package.lock
+388 silly lockFile 8d051f09-8191-0-08902338379994035-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/tmp.tgz
+389 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/tmp.tgz /Users/dynamite807/.npm/8d051f09-8191-0-08902338379994035-tmp-tgz.lock
+390 silly gunzTarPerm modes [ '755', '644' ]
+391 silly lockFile 325af483-18183-0-8265093937516212-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+392 silly lockFile 325af483-18183-0-8265093937516212-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+393 silly lockFile 85abae13-18183-0-8265093937516212-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/tmp.tgz
+394 silly lockFile 85abae13-18183-0-8265093937516212-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/tmp.tgz
+395 silly gunzTarPerm extractEntry package.json
+396 verbose tar pack [ '/Users/dynamite807/.npm/utile/0.1.7/package.tgz',
+396 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package' ]
+397 verbose tarball /Users/dynamite807/.npm/utile/0.1.7/package.tgz
+398 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+399 silly lockFile 325af483-18183-0-8265093937516212-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+400 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package /Users/dynamite807/.npm/325af483-18183-0-8265093937516212-package.lock
+401 silly lockFile dd9e1bc5-e807-npm-utile-0-1-7-package-tgz tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz
+402 verbose lock tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz /Users/dynamite807/.npm/dd9e1bc5-e807-npm-utile-0-1-7-package-tgz.lock
+403 silly gunzTarPerm extractEntry LICENSE
+404 silly gunzTarPerm extractEntry main.js
+405 silly gunzTarPerm extractEntry readme.mkd
+406 silly gunzTarPerm extractEntry test/test_monitor.js
+407 silly gunzTarPerm extractEntry test/test_watchTree.js
+408 silly gunzTarPerm extractEntry test/d/d/t
+409 silly gunzTarPerm extractEntry test/d/t
+410 http 200 https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz
+411 http 200 https://registry.npmjs.org/timespan/-/timespan-2.1.0.tgz
+412 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/tmp.tgz
+413 silly lockFile 394033b0-18218-0-6656679050065577-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+414 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package /Users/dynamite807/.npm/394033b0-18218-0-6656679050065577-package.lock
+415 silly lockFile 25e06b2c-18218-0-6656679050065577-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/tmp.tgz
+416 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/tmp.tgz /Users/dynamite807/.npm/25e06b2c-18218-0-6656679050065577-tmp-tgz.lock
+417 silly gunzTarPerm modes [ '755', '644' ]
+418 http 200 https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+419 silly gunzTarPerm extractEntry colors.js
+420 silly gunzTarPerm extractEntry example.html
+421 silly gunzTarPerm extractEntry example.js
+422 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/tmp.tgz
+423 silly lockFile e0296af9-18184-0-5852876112330705-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+424 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package /Users/dynamite807/.npm/e0296af9-18184-0-5852876112330705-package.lock
+425 silly lockFile 39dc1e8b-18184-0-5852876112330705-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/tmp.tgz
+426 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/tmp.tgz /Users/dynamite807/.npm/39dc1e8b-18184-0-5852876112330705-tmp-tgz.lock
+427 silly gunzTarPerm modes [ '755', '644' ]
+428 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+429 silly gunzTarPerm extractEntry package.json
+430 silly gunzTarPerm extractEntry ReadMe.md
+431 silly gunzTarPerm extractEntry test.js
+432 silly lockFile 645c6c59-8191-0-08902338379994035-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+433 silly lockFile 645c6c59-8191-0-08902338379994035-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+434 silly gunzTarPerm extractEntry package.json
+435 silly lockFile 8d051f09-8191-0-08902338379994035-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/tmp.tgz
+436 silly lockFile 8d051f09-8191-0-08902338379994035-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/tmp.tgz
+437 verbose tar pack [ '/Users/dynamite807/.npm/watch/0.7.0/package.tgz',
+437 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package' ]
+438 verbose tarball /Users/dynamite807/.npm/watch/0.7.0/package.tgz
+439 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+440 silly lockFile 645c6c59-8191-0-08902338379994035-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+441 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package /Users/dynamite807/.npm/645c6c59-8191-0-08902338379994035-package.lock
+442 silly lockFile 4c14c7fe-e807-npm-watch-0-7-0-package-tgz tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz
+443 verbose lock tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz /Users/dynamite807/.npm/4c14c7fe-e807-npm-watch-0-7-0-package-tgz.lock
+444 silly gunzTarPerm extractEntry .npmignore
+445 silly gunzTarPerm extractEntry README.md
+446 http 200 https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+447 silly gunzTarPerm extractEntry LICENSE
+448 silly gunzTarPerm extractEntry docs/docco.css
+449 silly lockFile 325af483-18183-0-8265093937516212-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+450 silly lockFile 325af483-18183-0-8265093937516212-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618183-0.8265093937516212/package
+451 silly lockFile dd9e1bc5-e807-npm-utile-0-1-7-package-tgz tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz
+452 silly lockFile dd9e1bc5-e807-npm-utile-0-1-7-package-tgz tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz
+453 silly lockFile b74e81f8-amite807-npm-utile-0-1-7-package /Users/dynamite807/.npm/utile/0.1.7/package
+454 verbose lock /Users/dynamite807/.npm/utile/0.1.7/package /Users/dynamite807/.npm/b74e81f8-amite807-npm-utile-0-1-7-package.lock
+455 silly gunzTarPerm extractEntry docs/pkginfo.html
+456 silly gunzTarPerm extractEntry examples/package.json
+457 silly gunzTarPerm extractEntry examples/all-properties.js
+458 silly gunzTarPerm extractEntry examples/array-argument.js
+459 silly gunzTarPerm extractEntry examples/multiple-properties.js
+460 silly gunzTarPerm extractEntry examples/object-argument.js
+461 silly gunzTarPerm extractEntry examples/single-property.js
+462 silly gunzTarPerm extractEntry examples/target-dir.js
+463 silly gunzTarPerm extractEntry examples/subdir/package.json
+464 silly gunzTarPerm extractEntry lib/pkginfo.js
+465 silly gunzTarPerm extractEntry test/pkginfo-test.js
+466 silly lockFile b74e81f8-amite807-npm-utile-0-1-7-package /Users/dynamite807/.npm/utile/0.1.7/package
+467 silly lockFile b74e81f8-amite807-npm-utile-0-1-7-package /Users/dynamite807/.npm/utile/0.1.7/package
+468 verbose tar unpack /Users/dynamite807/.npm/utile/0.1.7/package.tgz
+469 silly lockFile 954f170b-amite807-npm-utile-0-1-7-package tar:///Users/dynamite807/.npm/utile/0.1.7/package
+470 verbose lock tar:///Users/dynamite807/.npm/utile/0.1.7/package /Users/dynamite807/.npm/954f170b-amite807-npm-utile-0-1-7-package.lock
+471 silly lockFile dd9e1bc5-e807-npm-utile-0-1-7-package-tgz tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz
+472 verbose lock tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz /Users/dynamite807/.npm/dd9e1bc5-e807-npm-utile-0-1-7-package-tgz.lock
+473 silly gunzTarPerm modes [ '755', '644' ]
+474 silly gunzTarPerm extractEntry package.json
+475 silly gunzTarPerm extractEntry .npmignore
+476 silly gunzTarPerm extractEntry README.md
+477 silly gunzTarPerm extractEntry LICENSE
+478 silly gunzTarPerm extractEntry .travis.yml
+479 silly gunzTarPerm extractEntry CHANGELOG.md
+480 silly gunzTarPerm extractEntry lib/args.js
+481 silly gunzTarPerm extractEntry lib/base64.js
+482 silly gunzTarPerm extractEntry lib/file.js
+483 silly lockFile 394033b0-18218-0-6656679050065577-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+484 silly lockFile 394033b0-18218-0-6656679050065577-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+485 silly lockFile 25e06b2c-18218-0-6656679050065577-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/tmp.tgz
+486 silly lockFile 25e06b2c-18218-0-6656679050065577-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/tmp.tgz
+487 silly lockFile 645c6c59-8191-0-08902338379994035-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+488 silly lockFile 645c6c59-8191-0-08902338379994035-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618191-0.08902338379994035/package
+489 silly lockFile 4c14c7fe-e807-npm-watch-0-7-0-package-tgz tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz
+490 silly lockFile 4c14c7fe-e807-npm-watch-0-7-0-package-tgz tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz
+491 verbose tar pack [ '/Users/dynamite807/.npm/colors/0.6.0-1/package.tgz',
+491 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package' ]
+492 verbose tarball /Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+493 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+494 silly lockFile 394033b0-18218-0-6656679050065577-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+495 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package /Users/dynamite807/.npm/394033b0-18218-0-6656679050065577-package.lock
+496 silly lockFile 46ef8c79-7-npm-colors-0-6-0-1-package-tgz tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+497 verbose lock tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz /Users/dynamite807/.npm/46ef8c79-7-npm-colors-0-6-0-1-package-tgz.lock
+498 silly lockFile ebb17d18-amite807-npm-watch-0-7-0-package /Users/dynamite807/.npm/watch/0.7.0/package
+499 verbose lock /Users/dynamite807/.npm/watch/0.7.0/package /Users/dynamite807/.npm/ebb17d18-amite807-npm-watch-0-7-0-package.lock
+500 silly lockFile ebb17d18-amite807-npm-watch-0-7-0-package /Users/dynamite807/.npm/watch/0.7.0/package
+501 silly lockFile ebb17d18-amite807-npm-watch-0-7-0-package /Users/dynamite807/.npm/watch/0.7.0/package
+502 silly gunzTarPerm extractEntry lib/format.js
+503 verbose tar unpack /Users/dynamite807/.npm/watch/0.7.0/package.tgz
+504 silly lockFile 7a8dc100-amite807-npm-watch-0-7-0-package tar:///Users/dynamite807/.npm/watch/0.7.0/package
+505 verbose lock tar:///Users/dynamite807/.npm/watch/0.7.0/package /Users/dynamite807/.npm/7a8dc100-amite807-npm-watch-0-7-0-package.lock
+506 silly lockFile 4c14c7fe-e807-npm-watch-0-7-0-package-tgz tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz
+507 verbose lock tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz /Users/dynamite807/.npm/4c14c7fe-e807-npm-watch-0-7-0-package-tgz.lock
+508 silly gunzTarPerm modes [ '755', '644' ]
+509 silly gunzTarPerm extractEntry lib/index.js
+510 silly gunzTarPerm extractEntry test/file-test.js
+511 silly gunzTarPerm extractEntry package.json
+512 silly gunzTarPerm extractEntry LICENSE
+513 silly gunzTarPerm extractEntry main.js
+514 silly gunzTarPerm extractEntry test/format-test.js
+515 silly gunzTarPerm extractEntry test/function-args-test.js
+516 silly gunzTarPerm extractEntry readme.mkd
+517 silly gunzTarPerm extractEntry test/test_monitor.js
+518 silly gunzTarPerm extractEntry test/test_watchTree.js
+519 silly gunzTarPerm extractEntry test/d/d/t
+520 silly gunzTarPerm extractEntry test/d/t
+521 silly gunzTarPerm extractEntry test/random-string-test.js
+522 silly gunzTarPerm extractEntry test/require-directory-test.js
+523 http 200 https://registry.npmjs.org/flatiron/-/flatiron-0.3.5.tgz
+524 silly gunzTarPerm extractEntry test/utile-test.js
+525 silly gunzTarPerm extractEntry test/fixtures/read-json-file/config.json
+526 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/tmp.tgz
+527 silly lockFile f71fb705-8152-0-43083455646410584-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+528 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package /Users/dynamite807/.npm/f71fb705-8152-0-43083455646410584-package.lock
+529 silly lockFile 73b984f7-8152-0-43083455646410584-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/tmp.tgz
+530 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/tmp.tgz /Users/dynamite807/.npm/73b984f7-8152-0-43083455646410584-tmp-tgz.lock
+531 http 200 https://registry.npmjs.org/winston/-/winston-0.7.1.tgz
+532 silly gunzTarPerm modes [ '755', '644' ]
+533 http 200 https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz
+534 silly gunzTarPerm extractEntry package.json
+535 silly gunzTarPerm extractEntry test/fixtures/require-directory/helloWorld.js
+536 silly gunzTarPerm extractEntry test/fixtures/require-directory/directory/index.js
+537 silly gunzTarPerm extractEntry .npmignore
+538 silly gunzTarPerm extractEntry README.md
+539 silly lockFile 394033b0-18218-0-6656679050065577-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+540 silly lockFile 394033b0-18218-0-6656679050065577-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.6656679050065577/package
+541 silly gunzTarPerm extractEntry test/helpers/macros.js
+542 silly lockFile 46ef8c79-7-npm-colors-0-6-0-1-package-tgz tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+543 silly lockFile 46ef8c79-7-npm-colors-0-6-0-1-package-tgz tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+544 silly lockFile ab90ac59-te807-npm-colors-0-6-0-1-package /Users/dynamite807/.npm/colors/0.6.0-1/package
+545 verbose lock /Users/dynamite807/.npm/colors/0.6.0-1/package /Users/dynamite807/.npm/ab90ac59-te807-npm-colors-0-6-0-1-package.lock
+546 silly gunzTarPerm extractEntry LICENSE
+547 silly gunzTarPerm extractEntry .travis.yml
+548 silly lockFile ab90ac59-te807-npm-colors-0-6-0-1-package /Users/dynamite807/.npm/colors/0.6.0-1/package
+549 silly lockFile ab90ac59-te807-npm-colors-0-6-0-1-package /Users/dynamite807/.npm/colors/0.6.0-1/package
+550 verbose tar unpack /Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+551 silly lockFile 927ebe62-te807-npm-colors-0-6-0-1-package tar:///Users/dynamite807/.npm/colors/0.6.0-1/package
+552 verbose lock tar:///Users/dynamite807/.npm/colors/0.6.0-1/package /Users/dynamite807/.npm/927ebe62-te807-npm-colors-0-6-0-1-package.lock
+553 silly lockFile 46ef8c79-7-npm-colors-0-6-0-1-package-tgz tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+554 verbose lock tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz /Users/dynamite807/.npm/46ef8c79-7-npm-colors-0-6-0-1-package-tgz.lock
+555 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/tmp.tgz
+556 silly lockFile edc88080-18208-0-5922139550093561-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+557 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package /Users/dynamite807/.npm/edc88080-18208-0-5922139550093561-package.lock
+558 silly lockFile acdeaa1e-18208-0-5922139550093561-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/tmp.tgz
+559 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/tmp.tgz /Users/dynamite807/.npm/acdeaa1e-18208-0-5922139550093561-tmp-tgz.lock
+560 silly gunzTarPerm modes [ '755', '644' ]
+561 silly gunzTarPerm extractEntry examples/all-env-vars.js
+562 silly gunzTarPerm extractEntry examples/custom-cwd.js
+563 silly gunzTarPerm modes [ '755', '644' ]
+564 silly gunzTarPerm extractEntry package.json
+565 silly gunzTarPerm extractEntry .gitignore
+566 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/tmp.tgz
+567 silly lockFile 5c672c35-18358-0-2620632865000516-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+568 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package /Users/dynamite807/.npm/5c672c35-18358-0-2620632865000516-package.lock
+569 silly lockFile b10f300a-18358-0-2620632865000516-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/tmp.tgz
+570 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/tmp.tgz /Users/dynamite807/.npm/b10f300a-18358-0-2620632865000516-tmp-tgz.lock
+571 silly gunzTarPerm extractEntry colors.js
+572 silly gunzTarPerm extractEntry example.js
+573 silly gunzTarPerm modes [ '755', '644' ]
+574 silly gunzTarPerm extractEntry CHANGELOG.md
+575 silly gunzTarPerm extractEntry LICENSE
+576 silly gunzTarPerm extractEntry test.js
+577 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+578 silly gunzTarPerm extractEntry package.json
+579 silly gunzTarPerm extractEntry examples/env-server.js
+580 silly gunzTarPerm extractEntry examples/env-vars.js
+581 silly gunzTarPerm extractEntry package.json
+582 silly gunzTarPerm extractEntry README.md
+583 silly gunzTarPerm extractEntry LICENSE
+584 silly gunzTarPerm extractEntry index.js
+585 silly gunzTarPerm extractEntry examples/count-timer.js
+586 silly gunzTarPerm extractEntry examples/always-throw.js
+587 silly gunzTarPerm extractEntry examples/list-multiple.js
+588 silly gunzTarPerm extractEntry examples/log-on-interval.js
+589 silly gunzTarPerm extractEntry examples/multiple-processes.js
+590 silly gunzTarPerm extractEntry examples/process-send.js
+591 silly gunzTarPerm extractEntry examples/signal-ignore.js
+592 silly gunzTarPerm extractEntry examples/server.js
+593 silly gunzTarPerm extractEntry examples/error-on-timer.js
+594 silly gunzTarPerm extractEntry examples/spawn-and-error.js
+595 silly gunzTarPerm extractEntry examples/graceful-exit.js
+596 silly gunzTarPerm extractEntry examples/cli-multiple-start
+597 silly gunzTarPerm extractEntry lib/index.js
+598 silly gunzTarPerm extractEntry lib/forever-monitor/common.js
+599 silly gunzTarPerm extractEntry lib/forever-monitor/monitor.js
+600 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/index.js
+601 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/logger.js
+602 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/watch.js
+603 silly gunzTarPerm extractEntry test/core/check-process-test.js
+604 silly gunzTarPerm extractEntry test/fixtures/fork.js
+605 silly gunzTarPerm extractEntry test/fixtures/gc.js
+606 silly gunzTarPerm extractEntry test/fixtures/logs.js
+607 silly gunzTarPerm extractEntry test/fixtures/send-pong.js
+608 silly gunzTarPerm extractEntry test/fixtures/testnode
+609 silly gunzTarPerm extractEntry test/fixtures/watch/daemon.js
+610 silly gunzTarPerm extractEntry test/fixtures/watch/.foreverignore
+611 silly gunzTarPerm extractEntry test/fixtures/watch/file
+612 silly gunzTarPerm extractEntry test/fixtures/watch/ignoredDir/file
+613 silly gunzTarPerm extractEntry test/fixtures/watch/removeMe
+614 silly gunzTarPerm extractEntry test/helpers/macros.js
+615 silly gunzTarPerm extractEntry test/monitor/env-spawn-test.js
+616 silly gunzTarPerm extractEntry test/monitor/fork-test.js
+617 silly gunzTarPerm extractEntry test/monitor/send-test.js
+618 silly gunzTarPerm extractEntry test/monitor/signal-test.js
+619 silly gunzTarPerm extractEntry test/monitor/simple-test.js
+620 silly gunzTarPerm extractEntry test/monitor/spin-test.js
+621 silly gunzTarPerm extractEntry test/plugins/logger-test.js
+622 silly gunzTarPerm extractEntry test/plugins/watch-test.js
+623 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.js
+624 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.min.js
+625 silly gunzTarPerm extractEntry docs/docco.css
+626 silly gunzTarPerm extractEntry docs/time-span.html
+627 silly gunzTarPerm extractEntry lib/time-span.js
+628 silly gunzTarPerm extractEntry test/time-span-test.js
+629 silly gunzTarPerm extractEntry example/line_count_options.js
+630 silly gunzTarPerm extractEntry ReadMe.md
+631 silly gunzTarPerm extractEntry example/boolean_double.js
+632 silly gunzTarPerm extractEntry example/divide.js
+633 silly gunzTarPerm extractEntry example.html
+634 silly lockFile 7a8dc100-amite807-npm-watch-0-7-0-package tar:///Users/dynamite807/.npm/watch/0.7.0/package
+635 silly lockFile 7a8dc100-amite807-npm-watch-0-7-0-package tar:///Users/dynamite807/.npm/watch/0.7.0/package
+636 silly lockFile 4c14c7fe-e807-npm-watch-0-7-0-package-tgz tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz
+637 silly lockFile 4c14c7fe-e807-npm-watch-0-7-0-package-tgz tar:///Users/dynamite807/.npm/watch/0.7.0/package.tgz
+638 verbose chmod /Users/dynamite807/.npm/watch/0.7.0/package.tgz 644
+639 verbose chown /Users/dynamite807/.npm/watch/0.7.0/package.tgz [ 501, 20 ]
+640 silly lockFile fa1c3283--npmjs-org-watch-watch-0-7-0-tgz https://registry.npmjs.org/watch/-/watch-0.7.0.tgz
+641 silly lockFile fa1c3283--npmjs-org-watch-watch-0-7-0-tgz https://registry.npmjs.org/watch/-/watch-0.7.0.tgz
+642 silly lockFile 761751e6-watch-0-7-0 watch@0.7.0
+643 silly lockFile 761751e6-watch-0-7-0 watch@0.7.0
+644 silly lockFile e0296af9-18184-0-5852876112330705-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+645 silly lockFile e0296af9-18184-0-5852876112330705-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+646 silly lockFile 39dc1e8b-18184-0-5852876112330705-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/tmp.tgz
+647 silly lockFile 39dc1e8b-18184-0-5852876112330705-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/tmp.tgz
+648 verbose tar pack [ '/Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz',
+648 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package' ]
+649 verbose tarball /Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+650 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+651 silly lockFile e0296af9-18184-0-5852876112330705-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+652 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package /Users/dynamite807/.npm/e0296af9-18184-0-5852876112330705-package.lock
+653 silly lockFile f70fc41b-07-npm-pkginfo-0-3-0-package-tgz tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+654 verbose lock tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz /Users/dynamite807/.npm/f70fc41b-07-npm-pkginfo-0-3-0-package-tgz.lock
+655 silly gunzTarPerm extractEntry example/nonopt.js
+656 silly gunzTarPerm extractEntry example/string.js
+657 silly gunzTarPerm extractEntry example/default_hash.js
+658 silly gunzTarPerm extractEntry example/reflect.js
+659 silly gunzTarPerm extractEntry example/default_singles.js
+660 silly gunzTarPerm extractEntry example/usage-options.js
+661 silly gunzTarPerm extractEntry example/bool.js
+662 silly gunzTarPerm extractEntry example/short.js
+663 silly lockFile 927ebe62-te807-npm-colors-0-6-0-1-package tar:///Users/dynamite807/.npm/colors/0.6.0-1/package
+664 silly lockFile 927ebe62-te807-npm-colors-0-6-0-1-package tar:///Users/dynamite807/.npm/colors/0.6.0-1/package
+665 silly lockFile 46ef8c79-7-npm-colors-0-6-0-1-package-tgz tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+666 silly lockFile 46ef8c79-7-npm-colors-0-6-0-1-package-tgz tar:///Users/dynamite807/.npm/colors/0.6.0-1/package.tgz
+667 verbose chmod /Users/dynamite807/.npm/colors/0.6.0-1/package.tgz 644
+668 verbose chown /Users/dynamite807/.npm/colors/0.6.0-1/package.tgz [ 501, 20 ]
+669 silly lockFile fc1f01f9-js-org-colors-colors-0-6-0-1-tgz https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz
+670 silly lockFile fc1f01f9-js-org-colors-colors-0-6-0-1-tgz https://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz
+671 silly gunzTarPerm extractEntry example/xup.js
+672 silly gunzTarPerm extractEntry example/boolean_single.js
+673 silly lockFile 02eba27f-colors-0-6-0-1 colors@0.6.0-1
+674 silly lockFile 02eba27f-colors-0-6-0-1 colors@0.6.0-1
+675 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/tmp.tgz
+676 silly lockFile f52cb263-18218-0-5192650547251105-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package
+677 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package /Users/dynamite807/.npm/f52cb263-18218-0-5192650547251105-package.lock
+678 silly lockFile e429ab83-18218-0-5192650547251105-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/tmp.tgz
+679 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/tmp.tgz /Users/dynamite807/.npm/e429ab83-18218-0-5192650547251105-tmp-tgz.lock
+680 silly gunzTarPerm modes [ '755', '644' ]
+681 silly gunzTarPerm extractEntry example/line_count_wrap.js
+682 silly gunzTarPerm extractEntry example/line_count.js
+683 silly gunzTarPerm extractEntry package.json
+684 silly gunzTarPerm extractEntry readme.markdown
+685 silly gunzTarPerm extractEntry test/short.js
+686 silly gunzTarPerm extractEntry .npmignore
+687 silly gunzTarPerm extractEntry README.md
+688 silly lockFile 954f170b-amite807-npm-utile-0-1-7-package tar:///Users/dynamite807/.npm/utile/0.1.7/package
+689 silly lockFile 954f170b-amite807-npm-utile-0-1-7-package tar:///Users/dynamite807/.npm/utile/0.1.7/package
+690 silly lockFile dd9e1bc5-e807-npm-utile-0-1-7-package-tgz tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz
+691 silly lockFile dd9e1bc5-e807-npm-utile-0-1-7-package-tgz tar:///Users/dynamite807/.npm/utile/0.1.7/package.tgz
+692 silly gunzTarPerm extractEntry test/parse.js
+693 silly gunzTarPerm extractEntry test/_.js
+694 verbose chmod /Users/dynamite807/.npm/utile/0.1.7/package.tgz 644
+695 verbose chown /Users/dynamite807/.npm/utile/0.1.7/package.tgz [ 501, 20 ]
+696 silly gunzTarPerm extractEntry LICENSE
+697 silly gunzTarPerm extractEntry usage.js
+698 silly lockFile 80d5629c--npmjs-org-utile-utile-0-1-7-tgz https://registry.npmjs.org/utile/-/utile-0.1.7.tgz
+699 silly lockFile 80d5629c--npmjs-org-utile-utile-0-1-7-tgz https://registry.npmjs.org/utile/-/utile-0.1.7.tgz
+700 silly lockFile 78905450-utile-0-1-7 utile@0.1.7
+701 silly lockFile 78905450-utile-0-1-7 utile@0.1.7
+702 silly gunzTarPerm extractEntry test/usage.js
+703 silly gunzTarPerm extractEntry test/_/bin.js
+704 silly gunzTarPerm extractEntry .travis.yml
+705 silly gunzTarPerm extractEntry CHANGELOG.md
+706 silly gunzTarPerm extractEntry docs/docco.css
+707 silly gunzTarPerm extractEntry docs/nconf/common.html
+708 silly gunzTarPerm extractEntry docs/nconf/formats.html
+709 silly gunzTarPerm extractEntry docs/nconf/provider.html
+710 silly gunzTarPerm extractEntry docs/nconf/stores/file.html
+711 silly gunzTarPerm extractEntry docs/nconf/stores/memory.html
+712 silly gunzTarPerm extractEntry docs/nconf/stores/system.html
+713 silly gunzTarPerm extractEntry docs/nconf/stores.html
+714 silly gunzTarPerm extractEntry docs/nconf.html
+715 silly gunzTarPerm extractEntry lib/nconf.js
+716 silly gunzTarPerm extractEntry lib/nconf/common.js
+717 silly gunzTarPerm extractEntry lib/nconf/formats.js
+718 silly gunzTarPerm extractEntry lib/nconf/provider.js
+719 silly gunzTarPerm extractEntry lib/nconf/stores/argv.js
+720 silly gunzTarPerm extractEntry lib/nconf/stores/env.js
+721 silly gunzTarPerm extractEntry lib/nconf/stores/file.js
+722 silly gunzTarPerm extractEntry lib/nconf/stores/literal.js
+723 silly gunzTarPerm extractEntry lib/nconf/stores/memory.js
+724 silly gunzTarPerm extractEntry test/common-test.js
+725 silly gunzTarPerm extractEntry test/complete-test.js
+726 silly gunzTarPerm extractEntry test/helpers.js
+727 silly gunzTarPerm extractEntry test/hierarchy-test.js
+728 silly gunzTarPerm extractEntry test/nconf-test.js
+729 silly gunzTarPerm extractEntry test/provider-save-test.js
+730 silly gunzTarPerm extractEntry test/provider-test.js
+731 silly gunzTarPerm extractEntry test/fixtures/data.js
+732 silly gunzTarPerm extractEntry test/fixtures/complete.json
+733 silly gunzTarPerm extractEntry test/fixtures/hierarchy/global.json
+734 silly gunzTarPerm extractEntry test/fixtures/hierarchy/hierarchical.json
+735 silly gunzTarPerm extractEntry test/fixtures/hierarchy/user.json
+736 silly gunzTarPerm extractEntry test/fixtures/malformed.json
+737 silly gunzTarPerm extractEntry test/fixtures/merge/file1.json
+738 silly gunzTarPerm extractEntry test/fixtures/merge/file2.json
+739 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-argv.js
+740 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-change-argv.js
+741 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-env.js
+742 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-hierarchical-file-argv.js
+743 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-hierarchical-load-merge.js
+744 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-hierarchical-load-save.js
+745 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-nested-env.js
+746 silly gunzTarPerm extractEntry test/fixtures/scripts/provider-argv.js
+747 silly gunzTarPerm extractEntry test/fixtures/scripts/provider-env.js
+748 silly gunzTarPerm extractEntry test/mocks/mock-store.js
+749 silly gunzTarPerm extractEntry test/stores/argv-test.js
+750 silly gunzTarPerm extractEntry test/stores/env-test.js
+751 silly gunzTarPerm extractEntry test/stores/file-store-test.js
+752 silly gunzTarPerm extractEntry test/stores/literal-test.js
+753 silly gunzTarPerm extractEntry test/stores/memory-store-test.js
+754 silly gunzTarPerm extractEntry test/_/argv.js
+755 silly gunzTarPerm extractEntry .travis.yml
+756 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/tmp.tgz
+757 silly lockFile 802ec152-8304-0-08541698171757162-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+758 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package /Users/dynamite807/.npm/802ec152-8304-0-08541698171757162-package.lock
+759 silly lockFile c903aeea-8304-0-08541698171757162-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/tmp.tgz
+760 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/tmp.tgz /Users/dynamite807/.npm/c903aeea-8304-0-08541698171757162-tmp-tgz.lock
+761 silly gunzTarPerm modes [ '755', '644' ]
+762 silly gunzTarPerm extractEntry package.json
+763 silly gunzTarPerm extractEntry .npmignore
+764 silly gunzTarPerm extractEntry README.md
+765 silly gunzTarPerm extractEntry LICENSE
+766 silly gunzTarPerm extractEntry .travis.yml
+767 silly gunzTarPerm extractEntry bin/flatiron
+768 silly gunzTarPerm extractEntry examples/http-sample.js
+769 silly gunzTarPerm extractEntry examples/cli-sample/index.js
+770 silly gunzTarPerm extractEntry examples/cli-sample/print.js
+771 silly gunzTarPerm extractEntry examples/resourceful-app/package.json
+772 silly gunzTarPerm extractEntry examples/resourceful-app/app.js
+773 silly gunzTarPerm extractEntry examples/resourceful-app/app/resources/creature.js
+774 silly gunzTarPerm extractEntry examples/socket.io/server.js
+775 silly gunzTarPerm extractEntry examples/socket.io/index.html
+776 silly gunzTarPerm extractEntry examples/static-app/package.json
+777 silly gunzTarPerm extractEntry examples/static-app/app.js
+778 silly gunzTarPerm extractEntry examples/static-app/app/assets/style.js
+779 silly gunzTarPerm extractEntry examples/static-app/app/assets/style.css
+780 silly gunzTarPerm extractEntry lib/flatiron.js
+781 silly gunzTarPerm extractEntry lib/flatiron/app.js
+782 silly gunzTarPerm extractEntry lib/flatiron/common.js
+783 silly gunzTarPerm extractEntry lib/flatiron/constants.js
+784 silly gunzTarPerm extractEntry lib/flatiron/cli/create.js
+785 silly gunzTarPerm extractEntry lib/flatiron/plugins/cli.js
+786 silly gunzTarPerm extractEntry lib/flatiron/plugins/http.js
+787 silly gunzTarPerm extractEntry lib/flatiron/plugins/resourceful.js
+788 silly gunzTarPerm extractEntry lib/flatiron/plugins/static.js
+789 silly gunzTarPerm extractEntry scaffolds/cli/package.json
+790 silly gunzTarPerm extractEntry scaffolds/cli/app.js
+791 silly gunzTarPerm extractEntry scaffolds/cli/config/config.json
+792 silly gunzTarPerm extractEntry scaffolds/cli/directories.json
+793 silly gunzTarPerm extractEntry scaffolds/cli/files.json
+794 silly gunzTarPerm extractEntry scaffolds/cli/lib/index.js
+795 silly gunzTarPerm extractEntry scaffolds/http/package.json
+796 silly gunzTarPerm extractEntry scaffolds/http/app.js
+797 silly gunzTarPerm extractEntry scaffolds/http/config/config.json
+798 silly gunzTarPerm extractEntry scaffolds/http/directories.json
+799 silly gunzTarPerm extractEntry scaffolds/http/files.json
+800 silly gunzTarPerm extractEntry test/flatiron-test.js
+801 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/controller.js
+802 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/index.js
+803 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/new-york.js
+804 silly gunzTarPerm extractEntry test/plugins/resourceful-test.js
+805 silly gunzTarPerm extractEntry test/plugins/static-test.js
+806 silly lockFile e0296af9-18184-0-5852876112330705-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+807 silly lockFile e0296af9-18184-0-5852876112330705-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618184-0.5852876112330705/package
+808 silly lockFile f70fc41b-07-npm-pkginfo-0-3-0-package-tgz tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+809 silly lockFile f70fc41b-07-npm-pkginfo-0-3-0-package-tgz tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+810 silly lockFile cb9decc5-ite807-npm-pkginfo-0-3-0-package /Users/dynamite807/.npm/pkginfo/0.3.0/package
+811 verbose lock /Users/dynamite807/.npm/pkginfo/0.3.0/package /Users/dynamite807/.npm/cb9decc5-ite807-npm-pkginfo-0-3-0-package.lock
+812 silly lockFile cb9decc5-ite807-npm-pkginfo-0-3-0-package /Users/dynamite807/.npm/pkginfo/0.3.0/package
+813 silly lockFile cb9decc5-ite807-npm-pkginfo-0-3-0-package /Users/dynamite807/.npm/pkginfo/0.3.0/package
+814 verbose tar unpack /Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+815 silly lockFile c03a847c-ite807-npm-pkginfo-0-3-0-package tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package
+816 verbose lock tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package /Users/dynamite807/.npm/c03a847c-ite807-npm-pkginfo-0-3-0-package.lock
+817 silly lockFile f70fc41b-07-npm-pkginfo-0-3-0-package-tgz tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+818 verbose lock tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz /Users/dynamite807/.npm/f70fc41b-07-npm-pkginfo-0-3-0-package-tgz.lock
+819 silly gunzTarPerm modes [ '755', '644' ]
+820 silly gunzTarPerm extractEntry package.json
+821 silly gunzTarPerm extractEntry .npmignore
+822 silly gunzTarPerm extractEntry README.md
+823 silly gunzTarPerm extractEntry LICENSE
+824 silly gunzTarPerm extractEntry docs/docco.css
+825 silly gunzTarPerm extractEntry docs/pkginfo.html
+826 silly gunzTarPerm extractEntry examples/package.json
+827 silly gunzTarPerm extractEntry examples/all-properties.js
+828 silly gunzTarPerm extractEntry examples/array-argument.js
+829 silly gunzTarPerm extractEntry examples/multiple-properties.js
+830 silly gunzTarPerm extractEntry examples/object-argument.js
+831 silly gunzTarPerm extractEntry examples/single-property.js
+832 silly gunzTarPerm extractEntry examples/target-dir.js
+833 silly gunzTarPerm extractEntry examples/subdir/package.json
+834 silly gunzTarPerm extractEntry lib/pkginfo.js
+835 silly gunzTarPerm extractEntry test/pkginfo-test.js
+836 silly lockFile 5c672c35-18358-0-2620632865000516-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+837 silly lockFile 5c672c35-18358-0-2620632865000516-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+838 silly lockFile b10f300a-18358-0-2620632865000516-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/tmp.tgz
+839 silly lockFile b10f300a-18358-0-2620632865000516-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/tmp.tgz
+840 verbose tar pack [ '/Users/dynamite807/.npm/optimist/0.4.0/package.tgz',
+840 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package' ]
+841 verbose tarball /Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+842 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+843 silly lockFile 5c672c35-18358-0-2620632865000516-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+844 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package /Users/dynamite807/.npm/5c672c35-18358-0-2620632865000516-package.lock
+845 silly lockFile fc4efa91-7-npm-optimist-0-4-0-package-tgz tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+846 verbose lock tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz /Users/dynamite807/.npm/fc4efa91-7-npm-optimist-0-4-0-package-tgz.lock
+847 http 200 https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz
+848 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/tmp.tgz
+849 silly lockFile 7ca3790e-8526-0-05390827404335141-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+850 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package /Users/dynamite807/.npm/7ca3790e-8526-0-05390827404335141-package.lock
+851 silly lockFile caac7dc7-8526-0-05390827404335141-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/tmp.tgz
+852 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/tmp.tgz /Users/dynamite807/.npm/caac7dc7-8526-0-05390827404335141-tmp-tgz.lock
+853 silly gunzTarPerm modes [ '755', '644' ]
+854 silly gunzTarPerm extractEntry package.json
+855 silly gunzTarPerm extractEntry .npmignore
+856 silly gunzTarPerm extractEntry README.md
+857 silly gunzTarPerm extractEntry .travis.yml
+858 silly gunzTarPerm extractEntry examples/bla.js
+859 silly gunzTarPerm extractEntry examples/foo.js
+860 silly gunzTarPerm extractEntry examples/reconnect.js
+861 silly lockFile edc88080-18208-0-5922139550093561-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+862 silly lockFile edc88080-18208-0-5922139550093561-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+863 silly lockFile acdeaa1e-18208-0-5922139550093561-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/tmp.tgz
+864 silly lockFile acdeaa1e-18208-0-5922139550093561-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/tmp.tgz
+865 verbose tar pack [ '/Users/dynamite807/.npm/timespan/2.1.0/package.tgz',
+865 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package' ]
+866 verbose tarball /Users/dynamite807/.npm/timespan/2.1.0/package.tgz
+867 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+868 silly lockFile edc88080-18208-0-5922139550093561-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+869 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package /Users/dynamite807/.npm/edc88080-18208-0-5922139550093561-package.lock
+870 silly lockFile 6379da20-7-npm-timespan-2-1-0-package-tgz tar:///Users/dynamite807/.npm/timespan/2.1.0/package.tgz
+871 verbose lock tar:///Users/dynamite807/.npm/timespan/2.1.0/package.tgz /Users/dynamite807/.npm/6379da20-7-npm-timespan-2-1-0-package-tgz.lock
+872 silly gunzTarPerm extractEntry examples/simple-protocol.js
+873 silly gunzTarPerm extractEntry examples/verbose-protocol.js
+874 silly gunzTarPerm extractEntry lib/common.js
+875 silly gunzTarPerm extractEntry lib/nssocket.js
+876 silly gunzTarPerm extractEntry test/create-server-test.js
+877 silly gunzTarPerm extractEntry test/tcp-reconnect-test.js
+878 silly gunzTarPerm extractEntry test/tcp-test.js
+879 silly gunzTarPerm extractEntry test/tls-test.js
+880 silly gunzTarPerm extractEntry test/fixtures/ryans-cert.pem
+881 silly gunzTarPerm extractEntry test/fixtures/ryans-csr.pem
+882 silly gunzTarPerm extractEntry test/fixtures/ryans-key.pem
+883 verbose tar unpack /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618330-0.7219149523880333/tmp.tgz
+884 silly lockFile 7173b3ae-18330-0-7219149523880333-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618330-0.7219149523880333/package
+885 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618330-0.7219149523880333/package /Users/dynamite807/.npm/7173b3ae-18330-0-7219149523880333-package.lock
+886 silly lockFile 2cd4956c-18330-0-7219149523880333-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618330-0.7219149523880333/tmp.tgz
+887 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618330-0.7219149523880333/tmp.tgz /Users/dynamite807/.npm/2cd4956c-18330-0-7219149523880333-tmp-tgz.lock
+888 silly gunzTarPerm modes [ '755', '644' ]
+889 silly gunzTarPerm extractEntry package.json
+890 silly gunzTarPerm extractEntry .npmignore
+891 silly gunzTarPerm extractEntry README.md
+892 silly lockFile c03a847c-ite807-npm-pkginfo-0-3-0-package tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package
+893 silly lockFile c03a847c-ite807-npm-pkginfo-0-3-0-package tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package
+894 silly lockFile f70fc41b-07-npm-pkginfo-0-3-0-package-tgz tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+895 silly lockFile f70fc41b-07-npm-pkginfo-0-3-0-package-tgz tar:///Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz
+896 silly gunzTarPerm extractEntry LICENSE
+897 verbose chmod /Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz 644
+898 verbose chown /Users/dynamite807/.npm/pkginfo/0.3.0/package.tgz [ 501, 20 ]
+899 silly lockFile 0d38efc5-js-org-pkginfo-pkginfo-0-3-0-tgz https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+900 silly lockFile 0d38efc5-js-org-pkginfo-pkginfo-0-3-0-tgz https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+901 silly lockFile c6150d55-pkginfo-0-3-0 pkginfo@0.3.0
+902 silly lockFile c6150d55-pkginfo-0-3-0 pkginfo@0.3.0
+903 silly gunzTarPerm extractEntry .travis.yml
+904 silly gunzTarPerm extractEntry CHANGELOG.md
+905 silly lockFile f71fb705-8152-0-43083455646410584-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+906 silly lockFile f71fb705-8152-0-43083455646410584-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+907 silly lockFile 73b984f7-8152-0-43083455646410584-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/tmp.tgz
+908 silly lockFile 73b984f7-8152-0-43083455646410584-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/tmp.tgz
+909 verbose tar pack [ '/Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz',
+909 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package' ]
+910 verbose tarball /Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz
+911 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+912 silly lockFile f71fb705-8152-0-43083455646410584-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+913 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package /Users/dynamite807/.npm/f71fb705-8152-0-43083455646410584-package.lock
+914 silly lockFile cb683ffc-orever-monitor-1-2-3-package-tgz tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz
+915 verbose lock tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz /Users/dynamite807/.npm/cb683ffc-orever-monitor-1-2-3-package-tgz.lock
+916 silly gunzTarPerm extractEntry docs/transports.md
+917 silly gunzTarPerm extractEntry examples/couchdb.js
+918 silly lockFile 5c672c35-18358-0-2620632865000516-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+919 silly lockFile 5c672c35-18358-0-2620632865000516-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618358-0.2620632865000516/package
+920 silly lockFile fc4efa91-7-npm-optimist-0-4-0-package-tgz tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+921 silly lockFile fc4efa91-7-npm-optimist-0-4-0-package-tgz tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+922 silly gunzTarPerm extractEntry examples/custom-levels.js
+923 silly gunzTarPerm extractEntry examples/exception.js
+924 silly lockFile cbc52be3-te807-npm-optimist-0-4-0-package /Users/dynamite807/.npm/optimist/0.4.0/package
+925 verbose lock /Users/dynamite807/.npm/optimist/0.4.0/package /Users/dynamite807/.npm/cbc52be3-te807-npm-optimist-0-4-0-package.lock
+926 silly lockFile cbc52be3-te807-npm-optimist-0-4-0-package /Users/dynamite807/.npm/optimist/0.4.0/package
+927 silly lockFile cbc52be3-te807-npm-optimist-0-4-0-package /Users/dynamite807/.npm/optimist/0.4.0/package
+928 verbose tar unpack /Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+929 silly lockFile 549f0d1a-te807-npm-optimist-0-4-0-package tar:///Users/dynamite807/.npm/optimist/0.4.0/package
+930 verbose lock tar:///Users/dynamite807/.npm/optimist/0.4.0/package /Users/dynamite807/.npm/549f0d1a-te807-npm-optimist-0-4-0-package.lock
+931 silly lockFile fc4efa91-7-npm-optimist-0-4-0-package-tgz tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+932 verbose lock tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz /Users/dynamite807/.npm/fc4efa91-7-npm-optimist-0-4-0-package-tgz.lock
+933 silly gunzTarPerm modes [ '755', '644' ]
+934 silly gunzTarPerm extractEntry examples/raw-mode.js
+935 silly gunzTarPerm extractEntry examples/webhook-post.js
+936 silly gunzTarPerm extractEntry package.json
+937 silly gunzTarPerm extractEntry lib/winston.js
+938 silly gunzTarPerm extractEntry lib/winston/common.js
+939 silly gunzTarPerm extractEntry LICENSE
+940 silly gunzTarPerm extractEntry index.js
+941 silly gunzTarPerm extractEntry .travis.yml
+942 silly gunzTarPerm extractEntry example/bool.js
+943 silly gunzTarPerm extractEntry example/default_singles.js
+944 silly gunzTarPerm extractEntry lib/winston/config.js
+945 silly gunzTarPerm extractEntry lib/winston/container.js
+946 silly gunzTarPerm extractEntry lib/winston/exception.js
+947 silly gunzTarPerm extractEntry lib/winston/logger.js
+948 silly gunzTarPerm extractEntry example/divide.js
+949 silly gunzTarPerm extractEntry example/line_count.js
+950 silly lockFile 7ca3790e-8526-0-05390827404335141-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+951 silly lockFile 7ca3790e-8526-0-05390827404335141-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+952 silly lockFile caac7dc7-8526-0-05390827404335141-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/tmp.tgz
+953 silly lockFile caac7dc7-8526-0-05390827404335141-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/tmp.tgz
+954 silly gunzTarPerm extractEntry lib/winston/transports.js
+955 silly gunzTarPerm extractEntry lib/winston/config/cli-config.js
+956 verbose tar pack [ '/Users/dynamite807/.npm/nssocket/0.5.1/package.tgz',
+956 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package' ]
+957 verbose tarball /Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+958 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+959 silly lockFile 7ca3790e-8526-0-05390827404335141-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+960 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package /Users/dynamite807/.npm/7ca3790e-8526-0-05390827404335141-package.lock
+961 silly lockFile 588ed713-7-npm-nssocket-0-5-1-package-tgz tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+962 verbose lock tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz /Users/dynamite807/.npm/588ed713-7-npm-nssocket-0-5-1-package-tgz.lock
+963 silly gunzTarPerm extractEntry example/default_hash.js
+964 silly gunzTarPerm extractEntry example/line_count_wrap.js
+965 silly gunzTarPerm extractEntry lib/winston/config/npm-config.js
+966 silly gunzTarPerm extractEntry lib/winston/config/syslog-config.js
+967 silly gunzTarPerm extractEntry example/nonopt.js
+968 silly gunzTarPerm extractEntry example/reflect.js
+969 silly gunzTarPerm extractEntry lib/winston/transports/console.js
+970 silly gunzTarPerm extractEntry lib/winston/transports/daily-rotate-file.js
+971 silly gunzTarPerm extractEntry example/short.js
+972 silly gunzTarPerm extractEntry example/string.js
+973 silly gunzTarPerm extractEntry lib/winston/transports/file.js
+974 silly gunzTarPerm extractEntry lib/winston/transports/http.js
+975 silly gunzTarPerm extractEntry example/boolean_single.js
+976 silly gunzTarPerm extractEntry example/usage-options.js
+977 silly gunzTarPerm extractEntry example/boolean_double.js
+978 silly gunzTarPerm extractEntry example/xup.js
+979 silly lockFile 802ec152-8304-0-08541698171757162-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+980 silly lockFile 802ec152-8304-0-08541698171757162-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+981 silly lockFile c903aeea-8304-0-08541698171757162-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/tmp.tgz
+982 silly lockFile c903aeea-8304-0-08541698171757162-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/tmp.tgz
+983 silly gunzTarPerm extractEntry lib/winston/transports/memory.js
+984 silly gunzTarPerm extractEntry lib/winston/transports/transport.js
+985 verbose tar pack [ '/Users/dynamite807/.npm/flatiron/0.3.5/package.tgz',
+985 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package' ]
+986 verbose tarball /Users/dynamite807/.npm/flatiron/0.3.5/package.tgz
+987 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+988 silly lockFile 802ec152-8304-0-08541698171757162-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+989 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package /Users/dynamite807/.npm/802ec152-8304-0-08541698171757162-package.lock
+990 silly lockFile 6869f64f-7-npm-flatiron-0-3-5-package-tgz tar:///Users/dynamite807/.npm/flatiron/0.3.5/package.tgz
+991 verbose lock tar:///Users/dynamite807/.npm/flatiron/0.3.5/package.tgz /Users/dynamite807/.npm/6869f64f-7-npm-flatiron-0-3-5-package-tgz.lock
+992 silly gunzTarPerm extractEntry example/line_count_options.js
+993 silly gunzTarPerm extractEntry readme.markdown
+994 silly gunzTarPerm extractEntry test/_.js
+995 silly gunzTarPerm extractEntry test/parse.js
+996 silly gunzTarPerm extractEntry test/short.js
+997 silly gunzTarPerm extractEntry test/usage.js
+998 silly gunzTarPerm extractEntry lib/winston/transports/webhook.js
+999 silly gunzTarPerm extractEntry test/cli-test.js
+1000 silly gunzTarPerm extractEntry test/_/argv.js
+1001 silly gunzTarPerm extractEntry test/_/bin.js
+1002 silly gunzTarPerm extractEntry test/custom-timestamp-test.js
+1003 silly gunzTarPerm extractEntry test/exception-test.js
+1004 silly gunzTarPerm extractEntry test/logger-test.js
+1005 silly gunzTarPerm extractEntry test/container-test.js
+1006 silly gunzTarPerm extractEntry test/log-exception-test.js
+1007 silly gunzTarPerm extractEntry test/log-rewriter-test.js
+1008 silly gunzTarPerm extractEntry test/winston-test.js
+1009 silly gunzTarPerm extractEntry test/helpers.js
+1010 silly lockFile 7ca3790e-8526-0-05390827404335141-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+1011 silly lockFile 7ca3790e-8526-0-05390827404335141-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618526-0.05390827404335141/package
+1012 silly lockFile 588ed713-7-npm-nssocket-0-5-1-package-tgz tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+1013 silly lockFile 588ed713-7-npm-nssocket-0-5-1-package-tgz tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+1014 silly gunzTarPerm extractEntry test/fixtures/.gitkeep
+1015 silly gunzTarPerm extractEntry test/fixtures/keys/agent2-cert.pem
+1016 silly lockFile e93693b6-te807-npm-nssocket-0-5-1-package /Users/dynamite807/.npm/nssocket/0.5.1/package
+1017 verbose lock /Users/dynamite807/.npm/nssocket/0.5.1/package /Users/dynamite807/.npm/e93693b6-te807-npm-nssocket-0-5-1-package.lock
+1018 silly lockFile e93693b6-te807-npm-nssocket-0-5-1-package /Users/dynamite807/.npm/nssocket/0.5.1/package
+1019 silly lockFile e93693b6-te807-npm-nssocket-0-5-1-package /Users/dynamite807/.npm/nssocket/0.5.1/package
+1020 verbose tar unpack /Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+1021 silly lockFile b2c54373-te807-npm-nssocket-0-5-1-package tar:///Users/dynamite807/.npm/nssocket/0.5.1/package
+1022 verbose lock tar:///Users/dynamite807/.npm/nssocket/0.5.1/package /Users/dynamite807/.npm/b2c54373-te807-npm-nssocket-0-5-1-package.lock
+1023 silly lockFile 588ed713-7-npm-nssocket-0-5-1-package-tgz tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+1024 verbose lock tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz /Users/dynamite807/.npm/588ed713-7-npm-nssocket-0-5-1-package-tgz.lock
+1025 silly gunzTarPerm extractEntry test/fixtures/keys/agent2-key.pem
+1026 silly gunzTarPerm extractEntry test/fixtures/logs/.gitkeep
+1027 silly gunzTarPerm modes [ '755', '644' ]
+1028 silly gunzTarPerm extractEntry package.json
+1029 silly gunzTarPerm extractEntry test/fixtures/scripts/default-exceptions.js
+1030 silly gunzTarPerm extractEntry test/fixtures/scripts/exit-on-error.js
+1031 silly gunzTarPerm extractEntry .npmignore
+1032 silly gunzTarPerm extractEntry README.md
+1033 silly lockFile edc88080-18208-0-5922139550093561-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+1034 silly lockFile edc88080-18208-0-5922139550093561-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5922139550093561/package
+1035 silly lockFile 6379da20-7-npm-timespan-2-1-0-package-tgz tar:///Users/dynamite807/.npm/timespan/2.1.0/package.tgz
+1036 silly lockFile 6379da20-7-npm-timespan-2-1-0-package-tgz tar:///Users/dynamite807/.npm/timespan/2.1.0/package.tgz
+1037 silly lockFile cea8941e-te807-npm-timespan-2-1-0-package /Users/dynamite807/.npm/timespan/2.1.0/package
+1038 verbose lock /Users/dynamite807/.npm/timespan/2.1.0/package /Users/dynamite807/.npm/cea8941e-te807-npm-timespan-2-1-0-package.lock
+1039 silly gunzTarPerm extractEntry test/fixtures/scripts/log-exceptions.js
+1040 silly gunzTarPerm extractEntry test/fixtures/scripts/unhandle-exceptions.js
+1041 silly lockFile cea8941e-te807-npm-timespan-2-1-0-package /Users/dynamite807/.npm/timespan/2.1.0/package
+1042 silly lockFile cea8941e-te807-npm-timespan-2-1-0-package /Users/dynamite807/.npm/timespan/2.1.0/package
+1043 verbose tar unpack /Users/dynamite807/.npm/timespan/2.1.0/package.tgz
+1044 silly lockFile 123c0152-te807-npm-timespan-2-1-0-package tar:///Users/dynamite807/.npm/timespan/2.1.0/package
+1045 verbose lock tar:///Users/dynamite807/.npm/timespan/2.1.0/package /Users/dynamite807/.npm/123c0152-te807-npm-timespan-2-1-0-package.lock
+1046 silly lockFile 6379da20-7-npm-timespan-2-1-0-package-tgz tar:///Users/dynamite807/.npm/timespan/2.1.0/package.tgz
+1047 verbose lock tar:///Users/dynamite807/.npm/timespan/2.1.0/package.tgz /Users/dynamite807/.npm/6379da20-7-npm-timespan-2-1-0-package-tgz.lock
+1048 silly gunzTarPerm extractEntry .travis.yml
+1049 silly gunzTarPerm extractEntry examples/bla.js
+1050 silly gunzTarPerm modes [ '755', '644' ]
+1051 silly gunzTarPerm extractEntry examples/foo.js
+1052 silly gunzTarPerm extractEntry examples/reconnect.js
+1053 silly gunzTarPerm extractEntry package.json
+1054 silly gunzTarPerm extractEntry test/transports/console-test.js
+1055 silly gunzTarPerm extractEntry test/transports/daily-rotate-file-test.js
+1056 silly lockFile f71fb705-8152-0-43083455646410584-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+1057 silly lockFile f71fb705-8152-0-43083455646410584-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618152-0.43083455646410584/package
+1058 silly gunzTarPerm extractEntry .npmignore
+1059 silly gunzTarPerm extractEntry README.md
+1060 silly lockFile cb683ffc-orever-monitor-1-2-3-package-tgz tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz
+1061 silly lockFile cb683ffc-orever-monitor-1-2-3-package-tgz tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz
+1062 silly lockFile 82c9d6cb-pm-forever-monitor-1-2-3-package /Users/dynamite807/.npm/forever-monitor/1.2.3/package
+1063 verbose lock /Users/dynamite807/.npm/forever-monitor/1.2.3/package /Users/dynamite807/.npm/82c9d6cb-pm-forever-monitor-1-2-3-package.lock
+1064 silly lockFile 82c9d6cb-pm-forever-monitor-1-2-3-package /Users/dynamite807/.npm/forever-monitor/1.2.3/package
+1065 silly lockFile 82c9d6cb-pm-forever-monitor-1-2-3-package /Users/dynamite807/.npm/forever-monitor/1.2.3/package
+1066 verbose tar unpack /Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz
+1067 silly lockFile c529e42d-pm-forever-monitor-1-2-3-package tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package
+1068 verbose lock tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package /Users/dynamite807/.npm/c529e42d-pm-forever-monitor-1-2-3-package.lock
+1069 silly lockFile cb683ffc-orever-monitor-1-2-3-package-tgz tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz
+1070 verbose lock tar:///Users/dynamite807/.npm/forever-monitor/1.2.3/package.tgz /Users/dynamite807/.npm/cb683ffc-orever-monitor-1-2-3-package-tgz.lock
+1071 silly gunzTarPerm extractEntry LICENSE
+1072 silly gunzTarPerm extractEntry CHANGELOG.md
+1073 silly gunzTarPerm modes [ '755', '644' ]
+1074 silly gunzTarPerm extractEntry examples/simple-protocol.js
+1075 silly gunzTarPerm extractEntry examples/verbose-protocol.js
+1076 silly gunzTarPerm extractEntry package.json
+1077 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.js
+1078 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.min.js
+1079 silly gunzTarPerm extractEntry docs/docco.css
+1080 silly gunzTarPerm extractEntry docs/time-span.html
+1081 silly gunzTarPerm extractEntry lib/time-span.js
+1082 silly gunzTarPerm extractEntry test/time-span-test.js
+1083 silly gunzTarPerm extractEntry lib/common.js
+1084 silly gunzTarPerm extractEntry lib/nssocket.js
+1085 silly gunzTarPerm extractEntry test/create-server-test.js
+1086 silly gunzTarPerm extractEntry test/tcp-reconnect-test.js
+1087 silly gunzTarPerm extractEntry test/tcp-test.js
+1088 silly gunzTarPerm extractEntry test/tls-test.js
+1089 silly gunzTarPerm extractEntry test/fixtures/ryans-cert.pem
+1090 silly gunzTarPerm extractEntry test/fixtures/ryans-csr.pem
+1091 silly gunzTarPerm extractEntry test/fixtures/ryans-key.pem
+1092 silly gunzTarPerm extractEntry .npmignore
+1093 silly gunzTarPerm extractEntry README.md
+1094 silly gunzTarPerm extractEntry LICENSE
+1095 silly gunzTarPerm extractEntry .travis.yml
+1096 silly gunzTarPerm extractEntry test/transports/file-maxfiles-test.js
+1097 silly gunzTarPerm extractEntry test/transports/file-maxsize-test.js
+1098 silly gunzTarPerm extractEntry examples/all-env-vars.js
+1099 silly gunzTarPerm extractEntry examples/custom-cwd.js
+1100 silly gunzTarPerm extractEntry examples/env-server.js
+1101 silly gunzTarPerm extractEntry examples/env-vars.js
+1102 silly lockFile 549f0d1a-te807-npm-optimist-0-4-0-package tar:///Users/dynamite807/.npm/optimist/0.4.0/package
+1103 silly lockFile 549f0d1a-te807-npm-optimist-0-4-0-package tar:///Users/dynamite807/.npm/optimist/0.4.0/package
+1104 silly lockFile fc4efa91-7-npm-optimist-0-4-0-package-tgz tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+1105 silly lockFile fc4efa91-7-npm-optimist-0-4-0-package-tgz tar:///Users/dynamite807/.npm/optimist/0.4.0/package.tgz
+1106 verbose chmod /Users/dynamite807/.npm/optimist/0.4.0/package.tgz 644
+1107 verbose chown /Users/dynamite807/.npm/optimist/0.4.0/package.tgz [ 501, 20 ]
+1108 silly lockFile 12d4fb5c--org-optimist-optimist-0-4-0-tgz https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz
+1109 silly lockFile 12d4fb5c--org-optimist-optimist-0-4-0-tgz https://registry.npmjs.org/optimist/-/optimist-0.4.0.tgz
+1110 silly lockFile aea543b7-optimist-0-4-0 optimist@0.4.0
+1111 silly lockFile aea543b7-optimist-0-4-0 optimist@0.4.0
+1112 silly gunzTarPerm extractEntry examples/count-timer.js
+1113 silly gunzTarPerm extractEntry examples/always-throw.js
+1114 silly gunzTarPerm extractEntry examples/list-multiple.js
+1115 silly gunzTarPerm extractEntry examples/log-on-interval.js
+1116 silly gunzTarPerm extractEntry examples/multiple-processes.js
+1117 silly gunzTarPerm extractEntry examples/process-send.js
+1118 silly gunzTarPerm extractEntry examples/signal-ignore.js
+1119 silly gunzTarPerm extractEntry examples/server.js
+1120 silly gunzTarPerm extractEntry examples/error-on-timer.js
+1121 silly gunzTarPerm extractEntry examples/spawn-and-error.js
+1122 silly gunzTarPerm extractEntry examples/graceful-exit.js
+1123 silly gunzTarPerm extractEntry examples/cli-multiple-start
+1124 silly gunzTarPerm extractEntry lib/index.js
+1125 silly gunzTarPerm extractEntry lib/forever-monitor/common.js
+1126 silly gunzTarPerm extractEntry lib/forever-monitor/monitor.js
+1127 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/index.js
+1128 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/logger.js
+1129 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/watch.js
+1130 silly gunzTarPerm extractEntry test/core/check-process-test.js
+1131 silly gunzTarPerm extractEntry test/fixtures/fork.js
+1132 silly gunzTarPerm extractEntry test/fixtures/gc.js
+1133 silly gunzTarPerm extractEntry test/fixtures/logs.js
+1134 silly gunzTarPerm extractEntry test/fixtures/send-pong.js
+1135 silly gunzTarPerm extractEntry test/fixtures/testnode
+1136 silly gunzTarPerm extractEntry test/fixtures/watch/daemon.js
+1137 silly gunzTarPerm extractEntry test/fixtures/watch/.foreverignore
+1138 silly gunzTarPerm extractEntry test/fixtures/watch/file
+1139 silly gunzTarPerm extractEntry test/fixtures/watch/ignoredDir/file
+1140 silly gunzTarPerm extractEntry test/fixtures/watch/removeMe
+1141 silly gunzTarPerm extractEntry test/helpers/macros.js
+1142 silly gunzTarPerm extractEntry test/monitor/env-spawn-test.js
+1143 silly gunzTarPerm extractEntry test/monitor/fork-test.js
+1144 silly gunzTarPerm extractEntry test/monitor/send-test.js
+1145 silly gunzTarPerm extractEntry test/monitor/signal-test.js
+1146 silly gunzTarPerm extractEntry test/monitor/simple-test.js
+1147 silly gunzTarPerm extractEntry test/monitor/spin-test.js
+1148 silly gunzTarPerm extractEntry test/plugins/logger-test.js
+1149 silly gunzTarPerm extractEntry test/plugins/watch-test.js
+1150 silly gunzTarPerm extractEntry test/transports/file-test.js
+1151 silly gunzTarPerm extractEntry test/transports/memory-test.js
+1152 silly gunzTarPerm extractEntry test/transports/transport.js
+1153 silly gunzTarPerm extractEntry test/transports/webhook-test.js
+1154 silly lockFile b2c54373-te807-npm-nssocket-0-5-1-package tar:///Users/dynamite807/.npm/nssocket/0.5.1/package
+1155 silly lockFile b2c54373-te807-npm-nssocket-0-5-1-package tar:///Users/dynamite807/.npm/nssocket/0.5.1/package
+1156 silly lockFile 588ed713-7-npm-nssocket-0-5-1-package-tgz tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+1157 silly lockFile 588ed713-7-npm-nssocket-0-5-1-package-tgz tar:///Users/dynamite807/.npm/nssocket/0.5.1/package.tgz
+1158 verbose chmod /Users/dynamite807/.npm/nssocket/0.5.1/package.tgz 644
+1159 verbose chown /Users/dynamite807/.npm/nssocket/0.5.1/package.tgz [ 501, 20 ]
+1160 silly lockFile 5ec41cf7--org-nssocket-nssocket-0-5-1-tgz https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz
+1161 silly lockFile 5ec41cf7--org-nssocket-nssocket-0-5-1-tgz https://registry.npmjs.org/nssocket/-/nssocket-0.5.1.tgz
+1162 silly lockFile f616423b-nssocket-0-5-1 nssocket@0.5.1
+1163 silly lockFile f616423b-nssocket-0-5-1 nssocket@0.5.1
+1164 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+1165 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+1166 silly lockFile 802ec152-8304-0-08541698171757162-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+1167 silly lockFile 802ec152-8304-0-08541698171757162-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618304-0.08541698171757162/package
+1168 silly lockFile 6869f64f-7-npm-flatiron-0-3-5-package-tgz tar:///Users/dynamite807/.npm/flatiron/0.3.5/package.tgz
+1169 silly lockFile 6869f64f-7-npm-flatiron-0-3-5-package-tgz tar:///Users/dynamite807/.npm/flatiron/0.3.5/package.tgz
+1170 silly lockFile 02ea04a9-te807-npm-flatiron-0-3-5-package /Users/dynamite807/.npm/flatiron/0.3.5/package
+1171 verbose lock /Users/dynamite807/.npm/flatiron/0.3.5/package /Users/dynamite807/.npm/02ea04a9-te807-npm-flatiron-0-3-5-package.lock
+1172 silly lockFile 02ea04a9-te807-npm-flatiron-0-3-5-package /Users/dynamite807/.npm/flatiron/0.3.5/package
+1173 silly lockFile 02ea04a9-te807-npm-flatiron-0-3-5-package /Users/dynamite807/.npm/flatiron/0.3.5/package
+1174 verbose tar unpack /Users/dynamite807/.npm/flatiron/0.3.5/package.tgz
+1175 silly lockFile 74ef3c07-te807-npm-flatiron-0-3-5-package tar:///Users/dynamite807/.npm/flatiron/0.3.5/package
+1176 verbose lock tar:///Users/dynamite807/.npm/flatiron/0.3.5/package /Users/dynamite807/.npm/74ef3c07-te807-npm-flatiron-0-3-5-package.lock
+1177 silly lockFile 6869f64f-7-npm-flatiron-0-3-5-package-tgz tar:///Users/dynamite807/.npm/flatiron/0.3.5/package.tgz
+1178 verbose lock tar:///Users/dynamite807/.npm/flatiron/0.3.5/package.tgz /Users/dynamite807/.npm/6869f64f-7-npm-flatiron-0-3-5-package-tgz.lock
+1179 silly gunzTarPerm modes [ '755', '644' ]
+1180 silly gunzTarPerm extractEntry package.json
+1181 silly gunzTarPerm extractEntry .npmignore
+1182 silly gunzTarPerm extractEntry README.md
+1183 silly gunzTarPerm extractEntry LICENSE
+1184 silly gunzTarPerm extractEntry .travis.yml
+1185 silly gunzTarPerm extractEntry bin/flatiron
+1186 silly gunzTarPerm extractEntry examples/http-sample.js
+1187 silly gunzTarPerm extractEntry examples/cli-sample/index.js
+1188 silly gunzTarPerm extractEntry examples/cli-sample/print.js
+1189 silly gunzTarPerm extractEntry examples/resourceful-app/package.json
+1190 silly gunzTarPerm extractEntry examples/resourceful-app/app.js
+1191 silly gunzTarPerm extractEntry examples/resourceful-app/app/resources/creature.js
+1192 silly gunzTarPerm extractEntry examples/socket.io/server.js
+1193 silly gunzTarPerm extractEntry examples/socket.io/index.html
+1194 silly gunzTarPerm extractEntry examples/static-app/package.json
+1195 silly gunzTarPerm extractEntry examples/static-app/app.js
+1196 silly gunzTarPerm extractEntry examples/static-app/app/assets/style.js
+1197 silly gunzTarPerm extractEntry examples/static-app/app/assets/style.css
+1198 silly gunzTarPerm extractEntry lib/flatiron.js
+1199 silly gunzTarPerm extractEntry lib/flatiron/app.js
+1200 silly gunzTarPerm extractEntry lib/flatiron/common.js
+1201 silly gunzTarPerm extractEntry lib/flatiron/constants.js
+1202 silly gunzTarPerm extractEntry lib/flatiron/cli/create.js
+1203 silly gunzTarPerm extractEntry lib/flatiron/plugins/cli.js
+1204 silly gunzTarPerm extractEntry lib/flatiron/plugins/http.js
+1205 silly gunzTarPerm extractEntry lib/flatiron/plugins/resourceful.js
+1206 silly gunzTarPerm extractEntry lib/flatiron/plugins/static.js
+1207 silly gunzTarPerm extractEntry scaffolds/cli/package.json
+1208 silly gunzTarPerm extractEntry scaffolds/cli/app.js
+1209 silly gunzTarPerm extractEntry scaffolds/cli/config/config.json
+1210 silly gunzTarPerm extractEntry scaffolds/cli/directories.json
+1211 silly gunzTarPerm extractEntry scaffolds/cli/files.json
+1212 silly gunzTarPerm extractEntry scaffolds/cli/lib/index.js
+1213 silly gunzTarPerm extractEntry scaffolds/http/package.json
+1214 silly gunzTarPerm extractEntry scaffolds/http/app.js
+1215 silly gunzTarPerm extractEntry scaffolds/http/config/config.json
+1216 silly gunzTarPerm extractEntry scaffolds/http/directories.json
+1217 silly gunzTarPerm extractEntry scaffolds/http/files.json
+1218 silly gunzTarPerm extractEntry test/flatiron-test.js
+1219 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/controller.js
+1220 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/index.js
+1221 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/new-york.js
+1222 silly gunzTarPerm extractEntry test/plugins/resourceful-test.js
+1223 silly gunzTarPerm extractEntry test/plugins/static-test.js
+1224 silly lockFile f52cb263-18218-0-5192650547251105-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package
+1225 silly lockFile f52cb263-18218-0-5192650547251105-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package
+1226 silly lockFile e429ab83-18218-0-5192650547251105-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/tmp.tgz
+1227 silly lockFile e429ab83-18218-0-5192650547251105-tmp-tgz tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/tmp.tgz
+1228 verbose tar pack [ '/Users/dynamite807/.npm/nconf/0.6.7/package.tgz',
+1228 verbose tar pack   '/Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package' ]
+1229 verbose tarball /Users/dynamite807/.npm/nconf/0.6.7/package.tgz
+1230 verbose folder /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package
+1231 silly lockFile f52cb263-18218-0-5192650547251105-package tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package
+1232 verbose lock tar:///Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618218-0.5192650547251105/package /Users/dynamite807/.npm/f52cb263-18218-0-5192650547251105-package.lock
+1233 silly lockFile e767b235-e807-npm-nconf-0-6-7-package-tgz tar:///Users/dynamite807/.npm/nconf/0.6.7/package.tgz
+1234 verbose lock tar:///Users/dynamite807/.npm/nconf/0.6.7/package.tgz /Users/dynamite807/.npm/e767b235-e807-npm-nconf-0-6-7-package-tgz.lock
+1235 silly lockFile 3fad3ff6--npmjs-org-cliff-cliff-0-1-8-tgz https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+1236 silly lockFile 3fad3ff6--npmjs-org-cliff-cliff-0-1-8-tgz https://registry.npmjs.org/cliff/-/cliff-0.1.8.tgz
+1237 silly lockFile a0c35da7-cliff-0-1-8 cliff@0.1.8
+1238 silly lockFile a0c35da7-cliff-0-1-8 cliff@0.1.8
+1239 verbose about to build /usr/local/lib/node_modules/forever
+1240 info /usr/local/lib/node_modules/forever unbuild
+1241 info preuninstall forever@0.10.10
+1242 info uninstall forever@0.10.10
+1243 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild forever@0.10.10
+1244 verbose /usr/local/bin,[object Object] binRoot
+1245 info postuninstall forever@0.10.10
+1246 error Error: shasum check failed for /Users/dynamite807/tmp/npm-8879-8G-CqKMj/1386290618208-0.5427655964158475/tmp.tgz
+1246 error Expected: 43ca8ad9fe3943489693ab62dce0cae22509d272
+1246 error Actual:   03d63bba44e9f7b56f730960000d2da2cef91a26
+1246 error     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:38:8
+1246 error     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+1246 error     at ReadStream.EventEmitter.emit (events.js:125:20)
+1246 error     at _stream_readable.js:896:16
+1246 error     at process._tickCallback (node.js:317:11)
+1247 error If you need help, you may report this log at:
+1247 error     <http://github.com/isaacs/npm/issues>
+1247 error or email it to:
+1247 error     <npm-@googlegroups.com>
+1248 error System Darwin 12.5.0
+1249 error command "node" "/usr/local/bin/npm" "install" "forever" "-g"
+1250 error cwd /Users/dynamite807/Documents/tool/node/chara
+1251 error node -v v0.11.7
+1252 error npm -v 1.3.8
+1253 verbose exit [ 1, true ]
