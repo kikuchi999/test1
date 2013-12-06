@@ -1,4 +1,4 @@
-var s = io.connect('http://192.168.0.12:3000');
+var s = io.connect('http://127.0.0.1:3000');
 var num;
 // 
 //サーバから受け取るイベント
