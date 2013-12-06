@@ -1,4 +1,4 @@
-var s = io.connect('http://127.0.0.1:3000');
+var s = io.connect('http://testsample.c.node-ninja.com:3000/');
 var num;
 // 
 //サーバから受け取るイベント
